@@ -32,8 +32,8 @@
 }
 @media only screen and (min-device-width: 431px) and (max-device-width:511px) {
     .headerContainer::after {
-        height:22rem!important;
-        top: 15rem!important;
+        height:23rem!important;
+        top: 14rem!important;
     }
     .imgHeader{
         padding:1rem!important;
