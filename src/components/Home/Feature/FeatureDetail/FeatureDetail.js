@@ -7,8 +7,8 @@ import './FeatureDetail.css'
 
 const FeatureDetail = ({ feature }) => {
     return (
-        <li className=" list-group-item  liStyle py-3 px-0 ">
-            <span className="listStyle nameStyle"> <FontAwesomeIcon icon={faCheckCircle} className="checkIcon me-2" /> {feature.name}</span>
+        <li className=" list-group-item  liStyle py-1 px-1">
+            <span className="listStyle nameStyle"> <FontAwesomeIcon icon={faCheckCircle} className="checkIcon text-danger me-2" /> {feature.name}</span>
         </li>
     );
 };

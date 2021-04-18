@@ -6,6 +6,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import './Login.css'
 import { facebookSignIn, googleSignIn, inititliazeLoginFramework, signOut, signIn, signUp, githubSignIn, updateUsername, storeAuthToken } from './Loginmanager';
 import { useForm } from 'react-hook-form';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -119,7 +120,9 @@ const Login = () => {
   }
 
   return (
+    
     <div className="">
+      <Navbar></Navbar>
       {!user.isSignedIn &&
         <div className="row container  rowLogin w-50 m-auto d-flex justify-content-center align-items-center flex-column">
           <div className="col-md-12 cardSignStyle p-4 mt-5">

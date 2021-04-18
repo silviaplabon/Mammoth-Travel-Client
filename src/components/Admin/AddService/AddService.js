@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import AdminSidebar from '../../Shared/AdminSidebar/AdminSidebar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 const AddService = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     const [imageURL, setImageURL] = useState(null);
@@ -13,7 +14,7 @@ const AddService = () => {
         description:data.description,
         price:data.price
       };
-      const url = `http://localhost:4200/addServices`;
+      const url = `https://pacific-mesa-84577.herokuapp.com/addServices`;
 
       fetch(url, {
         method: 'POST',
@@ -24,7 +25,7 @@ const AddService = () => {
       })
         .then(res => console.log('server side response', res))
     };
-  
+
     const handleImageUpload = event => {
       console.log(event.target.files[0])
       const imageData = new FormData();
@@ -39,14 +40,19 @@ const AddService = () => {
           console.log(error);
         });
     }
+
+
+      
+    let dataSidebar='Add Service';
+
     return (
       <div className="container ">
         <div className="row">
-
       <div className="col-md-4  pb-5">
             <AdminSidebar></AdminSidebar>
       </div>
       <div className="col-md-8">
+         <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
            <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-4 formStyle">
           <div className="row d-flex">
             <div className="col-md-5">

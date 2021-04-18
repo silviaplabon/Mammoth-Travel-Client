@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import AdminSidebar from '../../Shared/AdminSidebar/AdminSidebar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 
 
 const AdminMaker = () => {
@@ -9,7 +10,7 @@ const AdminMaker = () => {
       const adminData = {
         email: data.email
       };
-      const url = `http://localhost:4200/adminMaker`;
+      const url = `https://pacific-mesa-84577.herokuapp.com/adminMaker`;
       fetch(url, {
         method: 'POST',
         headers: {
@@ -19,6 +20,7 @@ const AdminMaker = () => {
       })
         .then(res => alert(res))
     };
+    let dataSidebar='Admin Maker';
   
     
     return (
@@ -30,7 +32,9 @@ const AdminMaker = () => {
               <AdminSidebar></AdminSidebar>
         </div>
         <div className="col-md-8">
-        <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-2 formStyle">
+        <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
+
+        <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-4 formStyle border-rounded">
             <label for="servicename">Email</label>
             <input name="email" type="email" id="servicename" className="form-control " defaultValue="" ref={register} />
           <input type="submit" className="mt-3 btn btn-primary" value="Save" />

@@ -1,9 +1,9 @@
 .headerContainer {
-    height:600px;
+    height:37rem!important;
     position:relative;
 }
 .headerContainer::after {
-    height:700px;
+    height:37rem!important;
     content:'';
     position: absolute;
     top: 0;
@@ -17,3 +17,36 @@
     opacity:0.75;
 }
 
+@media only screen and (min-device-width: 511px) and (max-device-width:767px) {
+   
+    .headerContainer::after {
+        height:24rem!important;
+        top: 13rem!important;
+        z-index: -50;
+        opacity:0.75;
+    }
+    .imgHeader{
+        padding:1rem!important;
+    }
+
+}
+@media only screen and (min-device-width: 361px) and (max-device-width:511px) {
+    .headerContainer::after {
+        height:18rem!important;
+        top: 18rem!important;
+    }
+    .imgHeader{
+        padding:1rem!important;
+    }
+}
+   
+@media only screen and (min-device-width: 200px) and (max-device-width:360px) {
+
+    .headerContainer::after {
+        height:17rem!important;
+        top: 20rem!important;
+    }
+    .imgHeader{
+        padding:1rem!important;
+    }
+}

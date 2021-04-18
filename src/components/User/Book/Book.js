@@ -7,6 +7,7 @@ import ProcessPayment from '../../ProcessPayment/ProcessPayment';
 import { UserContext } from '../../../App';
 import Navbar from '../../Shared/Navbar/Navbar';
 import './Book.css'
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 
 
 const Book = () => {
@@ -23,7 +24,7 @@ const Book = () => {
 
 
     useEffect(() => {
-        let url = `http://localhost:4200/service/${id}`;
+        let url = `https://pacific-mesa-84577.herokuapp.com/service/${id}`;
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -46,7 +47,7 @@ const Book = () => {
             status:'Pending',
         };
 
-        fetch('http://localhost:4200/addBook', {
+        fetch('https://pacific-mesa-84577.herokuapp.com/addBook', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,15 +61,15 @@ const Book = () => {
                 }
             })
     }
-    console.log(loggedInUser)
-    console.log(radio)
+    let dataSidebar="Book";
     return (
         <div className="container">
             <div className="row  mt-5">
                 <div className="col-md-4 col-sm-12 pb-5">
                     <UserSidebar></UserSidebar>
                 </div>
-                <div className="col-md-7  col-sm-12 ms-2 bookSection mt-2">
+                <div className="col-md-7  col-sm-12 ms-2 bookSection ">
+                <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
                     <div className="col-md-7 col-sm-12">
 
                         <div className="row d-flex ms-1 inputSection">

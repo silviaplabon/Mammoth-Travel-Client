@@ -33,25 +33,34 @@ const Feature = () => {
         },
         {
             name: 'Great Travel'
+        },
+        {
+            name: 'Great Experience '
+        },
+        {
+            name: 'Great Travel'
         }
     ]
     return (
         <div className="container">
-        <div className="row "> 
-         <div className="col-md-6 featureImage mt-5">
-               <img src={featureImage} className="img-fluid h-75 w-100"></img>
-        </div>
-        <div className="featureShow col-md-5 ms-5  ">
-        <ul className=" list-group ulStyle mt-5">
-            {
-                featureData.map(feature=><FeatureDetail feature={feature}></FeatureDetail>)
+            <div className="row ">
+                <div className="col-md-12  featureImage  featureStyle mt-5">
+                    {/* <img src={featureImage} className="img-fluid h-75 w-100"></img>  */}
+                  <h1 className="text-danger text-center my-4">Why we Different</h1>
+                     <div className="featureShow col-md-6"> 
+                    
+                        <ul className=" list-group ulStyle">
+                            {
+                                featureData.map(feature => <FeatureDetail feature={feature}></FeatureDetail>)
 
-            }
-            </ul>
-        </div> 
-      
-         </div>
-         </div>
+                            }
+                        </ul>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
 
     );
 };

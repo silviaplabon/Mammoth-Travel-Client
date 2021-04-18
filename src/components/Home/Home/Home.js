@@ -1,4 +1,6 @@
 import React from 'react';
+import AboutTravelia from '../../AboutTravelia/AboutTravelia';
+import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar'
 import Testimonials from '../../Testimonials/Testimonials/Testimonials';
 import Feature from '../Feature/Feature/Feature';
@@ -12,9 +14,11 @@ const Home = () => {
             <Navbar></Navbar>
         <div className="headerContainer">
             <HeaderMain></HeaderMain>
-            <Feature></Feature>
             <Services></Services>
+            <Feature></Feature>
+            <AboutTravelia></AboutTravelia>
             <Testimonials></Testimonials>
+            <Footer></Footer>
         </div>      
         </div>
     );

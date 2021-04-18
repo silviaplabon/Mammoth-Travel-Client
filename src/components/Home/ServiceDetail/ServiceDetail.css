@@ -1,3 +1,26 @@
-.cursorIcon{
-    cursor:pointer;
+.cursorIcon {
+    cursor: pointer;
+}
+
+.cardHover {
+    transition: margin-top 0.1s ease-in-out;
+}
+.cardHover:hover {
+    margin-top: 10px;
+}
+.nameHover{
+    transition: transform 0.2s ease-in-out;
+}
+.descriptionHover{
+    transition: transform 0.1s ease-in-out;
+}
+
+.nameHover:hover{
+   transform:translateY(10%)
+}
+.buttonColor{
+    background-color:#2d524a;
+}
+.textColor{
+    color:#2d524a;
 }

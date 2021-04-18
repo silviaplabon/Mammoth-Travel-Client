@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../Shared/AdminSidebar/AdminSidebar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 import OrderDetail from '../OrderDetail/OrderDetail';
 import './OrderList.css'
 const OrderList = () => {
     const [bookings, setBookings] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4200/allBookingsData')
+        fetch('https://pacific-mesa-84577.herokuapp.com/allBookingsData')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
-    console.log(bookings);
+    let dataSidebar="Order List";
     return (
-        <div className="container">
+        <div className="">
         <div className="row rowOrder">
             <div className="col-md-4  col-sm-12 pb-5">
                 <AdminSidebar></AdminSidebar>
             </div>
             <div className="col-md-8 col-sm-12 colOrder">
+            <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
                 <div className="col-md-12">
                     <table class="table table-striped table-hover table-responsive-xs tableOrder">
                         <thead>

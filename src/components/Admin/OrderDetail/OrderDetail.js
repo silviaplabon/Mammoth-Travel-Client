@@ -13,7 +13,7 @@ const OrderDetail = ({ booking }) => {
            status:e.target.value
         };
         console.log(bookDetails)
-           fetch(`http://localhost:4200/update/${_id}`, {
+           fetch(`https://pacific-mesa-84577.herokuapp.com/update/${_id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bookDetails)
@@ -31,7 +31,7 @@ const OrderDetail = ({ booking }) => {
     
             <tbody>
             <tr>
-                <td className="fontOrderStyle">{displayName}</td>
+                <td className="fontOrderStyle pe-1">{displayName}</td>
                 <td className="fontOrderStyle">{email}</td>
                 <td className="fontOrderStyle">{PaymentMethod}</td>
                 <td className="fontOrderStyle">{name}</td>

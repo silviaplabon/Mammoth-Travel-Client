@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../../App';
 import Navbar from '../../Shared/Navbar/Navbar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 import UserSidebar from '../../Shared/UserSidebar/UserSidebar';
 import BookingDetail from '../BookingDetail/BookingDetail';
 
@@ -10,7 +11,7 @@ const BookingList = () => {
     const [loggedInUser,setLoggedInUser]=useContext(UserContext);
     console.log(loggedInUser,"silvia")
     useEffect(() => {
-        fetch('http://localhost:4200/userbookings?email='+loggedInUser?.email,
+        fetch('https://pacific-mesa-84577.herokuapp.com/userbookings?email='+loggedInUser?.email,
             {
                 method: 'GET',
                 headers: {
@@ -24,7 +25,7 @@ const BookingList = () => {
                 setBookings(data)
             })
     }, [loggedInUser.email])
-     console.log(bookings)
+     let dataSidebar="Booking List";
     return (
         <div className="container">
         <div className="row">
@@ -32,6 +33,7 @@ const BookingList = () => {
                 <UserSidebar></UserSidebar>
             </div>
             <div className="col-md-7 mt-5">
+            <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
                 <div className="row">
                 {
                     bookings.map(booking=><BookingDetail booking={booking}></BookingDetail>)

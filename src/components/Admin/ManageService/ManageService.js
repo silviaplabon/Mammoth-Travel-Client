@@ -2,14 +2,16 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import ServiceDetail from '../../Home/ServiceDetail/ServiceDetail';
 import AdminSidebar from '../../Shared/AdminSidebar/AdminSidebar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 
 const ManageService = () => {
     const [services,setServices]=useState([])
     useEffect(() => {
-        fetch('http://localhost:4200/serviceData')
+        fetch('https://pacific-mesa-84577.herokuapp.com/serviceData')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+    let dataSidebar="Manage Service";
 
     return (
         <div className="container">
@@ -18,7 +20,8 @@ const ManageService = () => {
                 <AdminSidebar></AdminSidebar>
             </div>
             <div className="col-md-8">
-                <div className="row  row-cols-1 row-cols-md-2">
+            <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
+                <div className="row  row-cols-1 row-cols-lg-2 row-cols-xxl-3">
                 {
 
                      services.map(service =><ServiceDetail state={true} service={service}></ServiceDetail> )

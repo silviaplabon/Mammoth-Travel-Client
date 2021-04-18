@@ -3,14 +3,14 @@ import ServiceDetail from '../ServiceDetail/ServiceDetail';
 const Services = () => {
     const [services,setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4200/serviceData')
+        fetch('https://pacific-mesa-84577.herokuapp.com/serviceData')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     console.log(services)
     return (
         <>
-        <h2 className="text-center">Our Awesome Services</h2>
+        <h2 className="text-center mt-5">Our Awesome Services</h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-2">
      
             {

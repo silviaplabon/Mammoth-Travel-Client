@@ -5,6 +5,7 @@ import AdminSidebar from '../../Shared/AdminSidebar/AdminSidebar';
 import {Link } from "react-router-dom";
 import UserSidebar from '../../Shared/UserSidebar/UserSidebar';
 import Navbar from '../../Shared/Navbar/Navbar';
+import SidebarNavbar from '../../Shared/SidebarNavbar/SidebarNavbar';
 
 
 const TestimonialDetail = () => {
@@ -15,7 +16,7 @@ const TestimonialDetail = () => {
             designation: data.designation,
             description: data.description,
         };
-        const url = `http://localhost:4200/addTestimonial`;
+        const url = `https://pacific-mesa-84577.herokuapp.com/addTestimonial`;
 
         fetch(url, {
             method: 'POST',
@@ -26,13 +27,15 @@ const TestimonialDetail = () => {
         })
             .then(res => console.log('server side response', res))
     };
+    let dataSidebar="Add Testimonial";
     return (
         <div className="container">
     <div className="row mt-5">
-            <div className="col-md-4 col-sm-12 pb-5 mt-5">
+            <div className="col-md-4 col-sm-12 col-xs-12 pb-5 mt-5">
                   <UserSidebar></UserSidebar>
             </div>
-            <div className="col-md-7 col-sm-12  mt-5 ms-1">
+            <div className="col-md-7 col-sm-12 col-xs-12 mt-5 ms-1">
+            <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
                 <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-4 formStyle">
                     <div className="row d-flex">
                         <div className="col-md-7">

@@ -1,5 +1,5 @@
 .sidebar{
-    background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+    background-color:#2d524a;
     height:100vh!important;
 }
 .sidebar li{
@@ -20,7 +20,7 @@
 
 @media only screen and (min-device-width: 200px) and (max-device-width:767px) {
     .sidebar{
-        height:30vh!important;
-        padding-bottom:3vh!important;
+        height:30rem!important;
+        
     }
 }
