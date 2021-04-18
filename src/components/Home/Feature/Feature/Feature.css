@@ -1,0 +1,13 @@
+.ulStyle{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* .featureImage{
+    background-image: url(../../../../images/Traveler_Image_WWF_Travel.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+} */
+.featureShow{
+    border:0!important;
+}

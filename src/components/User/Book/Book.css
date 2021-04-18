@@ -1,0 +1,13 @@
+
+@media only screen and (min-device-width: 200px) and (max-device-width:767px) {
+    .bookSection{
+        margin-left:0!important;
+        padding:0!important;
+    }
+    .inputSection{
+        margin-left:0!important;
+        margin-right:5px!important;
+        padding:0!important;
+    }
+
+}

@@ -1,0 +1,432 @@
+/* Five areas for CSS rules:
+
+     1.  Page itself
+     2.  Canada wordmark and FIP (header)
+     3.  Side bar
+     4.  Top black & blue menus
+     5.  Footer
+	 6.  Table formatting
+*/
+
+
+/* ======  1.  Page itself ========== */
+
+body
+{
+color:#000;
+font:normal 74%/1.5em verdana,arial,sans-serif;
+margin:0;
+padding:0;
+text-align:left;
+vertical-align:top;
+}
+
+/* Right Hand menu... */
+body.inforel #inforel01
+{
+/*display: None*/
+background:#fff;
+color:#000;
+display:block;
+float:right;
+margin:0;
+padding:0.5em 14px 0 0;
+width:40%;
+}
+
+/* ***** 4. Sizing ***** */
+
+h1
+{
+font-size:160%;
+line-height: 120%;
+}
+h2
+{font-size:130%;}
+h3
+{font-size:110%;}
+h4
+{font-size:100%;}
+h5
+{font-size:100%;}
+h6
+{font-size:100%;}
+
+
+#container
+{
+background:transparent;
+margin:0;
+position:relative;
+width:auto;
+}
+
+#content
+{
+background:transparent;
+margin:0;
+position:relative;
+}
+
+#content.contentfip
+{
+margin:0 0 0 5px;
+}
+
+#contentcontainer
+{
+clear:both;
+margin:  0 0  0 10px;
+padding-top:0.5em;
+}
+
+#patchcontainer
+{
+clear:both;
+margin:0 0 0 10px;
+padding-top:1.5em;
+}
+
+#contentblk01
+{
+margin: 0 -1% 0 1px;
+padding:0 10px 1em 0;
+width:95%;
+}
+
+
+body.inforel #contentblk01
+{
+float:left;
+margin: 0 -41% 0 1px;
+padding:0 10px 1em 0;
+width:54%;
+}
+
+.hide
+{
+display:none !important;
+}
+
+
+/* ======  2.  Canada wordmark and FIP (header) ========== */
+
+
+#header
+{
+background:#fff;
+position:relative;
+color:#000;
+font:normal 100%/1.5em verdana,arial,sans-serif;
+margin:0 0 0 -80px;
+padding:0;
+text-align:left;
+}
+
+#header img
+{border:none;}
+
+#blocker01
+{
+display: none
+}
+
+#headerfip
+{
+background:#fff;
+font:bold 140%/1.5em arial,sans-serif;
+height:47px;
+margin:0;
+padding-right:10px;
+width:auto;
+}
+
+#headerstc
+{
+display: none
+}
+
+#canwrdmrk
+{
+display:inline;
+height:21px;
+position:absolute;
+top:0;
+margin:0 14px 0 0;
+right:0;
+width:86px;
+}
+
+#fipstc_en, #fipstc_fr
+{
+display:inline;
+height:21px;
+position:absolute;
+top:0;
+left:92px;
+margin:0px 0 0 0;
+width:214px;
+}
+
+#fipstc_en.fipstc_enfip, #fipstc_fr.fipstc_frfip
+{
+left:5px;
+}
+
+#headerstc div
+{
+height:50px;
+left:0;
+margin:0;
+overflow:visible;
+position:absolute;
+top:0;
+width:100%;
+z-index:200;
+}
+
+#home.enlogo #headerstc div,
+#home.enlogo-nosearch #headerstc div
+{background:transparent url(/Framework/Images/scheme-v101/hdstchome-en.jpg) no-repeat;}
+
+body.enlogo #headerstc div,
+body.enlogo-nosearch #headerstc div
+{background:transparent url(/Framework/Images/scheme-v101/hdstc-en.jpg) no-repeat;}
+
+
+
+#home.frlogo #headerstc div,
+#home.frlogo-nosearch #headerstc div
+{background:transparent url(/Framework/Images/scheme-v101/hdstchome-fr.jpg) no-repeat;}
+
+body.frlogo #headerstc div,
+body.frlogo-nosearch #headerstc div
+{background:transparent url(/Framework/Images/scheme-v101/hdstc-fr.jpg) no-repeat;}
+
+#headerstc div a
+{
+background:transparent;
+display:block;
+height:26px;
+left:-28px;
+position:absolute;
+top:5px;
+width:100%;
+}
+
+/* ======  3.  Side bar ========== */
+
+#navpr01
+{
+display: none
+}
+
+body.nologo #navpr01
+{
+background:#f6f6f6 url(/Framework/Images/scheme-v101/bgsb03.gif) repeat-y -30px;
+color:#000;
+position:absolute;
+top:0px;
+width:132px;
+}
+
+body.nologo-nosearch #navpr01
+{
+background:#f6f6f6 url(/Framework/Images/scheme-v101/bgsb03.gif) repeat-y -30px;
+color:#000;
+position:absolute;
+top:9px;
+width:132px;
+}
+
+#navpr01 *.first
+{
+margin-top:0;
+}
+
+#navpr01 ol
+{
+background:transparent;
+
+margin:0;
+padding:0;
+width:131px;
+z-index:100;
+}
+
+
+#navpr01 ol li
+{
+border-bottom:1px solid #bbb;
+background:transparent;
+list-style-type:none;
+margin:0 0 1px 0;
+overflow:hidden;
+padding:0;
+text-align:left;
+vertical-align:middle;
+width:131px;
+z-index:100;
+border-bottom:1px solid #bbb;
+font:bold 95%/1.28em arial,sans-serif;
+}
+
+
+#navpr01 ol li.home a
+{
+background: transparent;
+color:#fff;
+font: bold 95%/1.28em arial,sans-serif;
+}
+
+
+#navpr01 ol li  a,
+#navpr01 ol li ul li a
+{
+background:#e6e6e6 url(/Framework/Images/scheme-v101/bgsb12.gif) repeat-y -32px;
+color:#000;
+display:block;
+font:bold 95%/1.28em arial,sans-serif;
+font-weight:normal;
+letter-spacing:0.1ex;
+margin: 0 -1px 1px 1px;
+padding:0.25em 16px 0.25em 8px;
+text-align:left;
+text-decoration:none;
+}
+
+
+#navpr01 ol li span.nolink
+{
+color:#fff;
+display:block;
+margin: 0 0 1px 1px;
+text-align:left;
+text-decoration:none;
+z-index:100;
+background:#1b5aa0 url(/Framework/Images/scheme-v101/bgsb01.gif) repeat-y -30px;
+padding:0.25em 8px 0.25em 8px;
+}
+
+
+#navpr01 ul
+{
+background:#fff;
+border-right:1px solid #bbb;
+margin:0 0 -2px 0;
+width:131px;
+}
+
+#navpr01 ul li,
+#navpr01 ul li.first
+{
+border-right:1px solid #bbb;
+border-bottom:1px solid #bbb;
+font: bold  102%/1.25em arial,sans-serif;
+}
+html>body #navpr01 ul li {margin-left: -41px;}  /* fix sidebar for Firefox */
+@media all and (min-width:0px){html>body #navpr01 ul li {margin-left: 0;} }  /* undo the effect of the Firefox fix for Opera */
+
+#navpr01 ul li.first
+{border-top:1px solid #fff;
+border-right:1px solid #bbb;
+border-bottom:1px solid #bbb;
+}
+
+#navpr01 li.last
+{border-bottom:none;}
+
+
+
+#navpr01 a:hover
+{
+background:#363636;
+color:#fff;
+text-decoration:none;
+}
+
+#navpr01 a:active
+{
+background:inherit;
+color:inherit;
+}
+
+#navpr01 .home
+{
+background:#c55d3b url(/Framework/Images/scheme-v101/bgsb11.gif) repeat-y -30px;
+color:#fff;
+font-size:109%;
+letter-spacing:0.3ex;
+text-transform:uppercase;
+}
+
+
+
+
+/* ======  4.  Top black & blue menus ========== */
+
+#navsegp01
+{
+display: none
+}
+
+
+/* ======  5.  Footer ========== */
+
+
+#footer
+{
+background:#fff;
+clear:both;
+height:2em;
+margin:2em 0 0 10px;
+padding:0;
+position:relative;
+color:#000;
+font:normal 100%/1.5em verdana,arial,sans-serif;
+text-align:left;
+}
+
+#footer *
+{font-size:95%;
+margin:0;
+padding:0;}
+
+#footer.ftfip
+{
+margin:2em 0 0 5px;
+}
+
+#borderfoot 
+{
+border-top:4px solid #363636;
+height:1em;
+margin:0;
+padding:0;
+}
+
+#datemod
+{
+margin:-0.75em 0 0.5em 0;
+width:40%;
+}
+
+#footer ol
+{
+display: none
+}
+
+
+/* ======  6.  Table formatting  ========== */
+
+caption	{
+font-size:1.15em; 
+font-weight:bold; 
+caption-side:top; 
+text-align:left; 
+padding-top:12px;padding-left:0;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.headerContainer {
+    height:600px;
+    position:relative;
+    /* background-image: url('../../../images/hdtravel.jpg'); */
+    /* background-size: 70% 100%; */
+    /* top:0;
+    left:0;
+    z-index:-10;
+    width:70%; */
+}
+.headerContainer::after {
+    height:700px;
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    background-image: url('../../../images/hdtravel.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    /* background-color: #3A4256!important; */
+    z-index: -50;
+    opacity:0.75;
+}
+

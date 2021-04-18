@@ -1,0 +1,1606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0070)https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/templates/lr_spd_2col_arc-eng.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!-- CLF 2.0 TEMPLATE VERSION 1.04 | VERSION 1.04 DU GABARIT NSI 2.0 -->
+<!-- HEADER BEGINS | DEBUT DE L'EN-TETE -->
+
+<!-- TITLE BEGINS | DEBUT DU TITRE -->
+<!-- InstanceBeginEditable name="Document title | Titre du document" -->
+<title>Statistics: Power from Data! Variance and standard deviation</title>
+<!-- InstanceEndEditable -->
+<!-- TITLE ENDS | FIN DU TITRE -->
+
+<!-- METADATA BEGINS | DEBUT DES METADONNEES -->
+
+<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+
+<!-- REQUIRED METADATA BEGINS | DÉBUT DES METADONNEES OBLIGATOIRES -->
+<!-- InstanceBeginEditable name="Required metadata | Metadonnees Obligatoires" -->
+<meta name="title" content="Statistics: Power from Data! Variance and standard deviation">
+<meta name="description" content="Unlike range and quartiles, the variance combines all the values in a data set to produce a measure of spread. The variance and standard deviation are the most commonly used measures of spread.">
+<meta name="date" content="2013-02-14">
+<meta name="keywords" content="variance, standard deviation, measures of spread, example">
+<meta name="dc.description" content="Unlike range and quartiles, the variance combines all the values in a data set to produce a measure of spread. The variance and standard deviation are the most commonly used measures of spread.">
+<meta name="dc.creator" content="Government of Canada, Statistics Canada">
+<meta name="dc.title" content="Statistics: Power from Data! Variance and standard deviation">
+<meta name="dcterms.issued" scheme="W3CDTF" content="2002-12-19">
+<meta name="dcterms.modified" scheme="W3CDTF" content="2013-02-14">
+<meta name="dc.language" scheme="ISO639-2/T" content="eng">
+<!-- InstanceEndEditable -->
+<!-- REQUIRED METADATA ENDS | FIN DES METADONNEES OBLIGATOIRES -->
+
+<!-- CUSTOM METADATA BEGINS | DEBUT METADONNEES PERSONNALISES -->
+<!-- InstanceBeginEditable name="Custom metadata | Metadonnees personnalises" -->
+
+<!-- InstanceEndEditable -->
+<!-- CUSTOM METADATA ENDS | FIN DES METADONNEES PERSONNALISES -->
+<!-- METADATA ENDS | FIN DES METADONNEES -->
+
+<!-- CSS TEMPLATE INCLUDE BEGINS | DEBUT DE L'INCLUSION -->
+	<!-- TEMPLATE SCRIPTS/CSS BEGIN | DEBUT DES SCRIPTS/CSS DU GABARIT -->
+	<link href="./Statistics_ Power from Data! Variance and standard deviation_files/base.css" media="screen, print" rel="stylesheet" type="text/css">
+	<link href="./Statistics_ Power from Data! Variance and standard deviation_files/2col.css" media="screen, print" rel="stylesheet" type="text/css">
+	<style type="text/css" media="all">@import url(/clf2/css/base2.css);</style>
+	<!-- TEMPLATE SCRIPTS/CSS END | FIN DES SCRIPTS/CSS DU GABARIT -->
+
+
+	
+	<!-- CUSTOM SCRIPTS/CSS BEGIN | DEBUT DES SCRIPTS/CSS PERSONNALISES -->
+	<link href="./Statistics_ Power from Data! Variance and standard deviation_files/base-institution.css" media="screen, print" rel="stylesheet" type="text/css">
+	<link href="./Statistics_ Power from Data! Variance and standard deviation_files/institution.css" media="screen, print" rel="stylesheet" type="text/css">
+	<script src="./Statistics_ Power from Data! Variance and standard deviation_files/sc.js.download" type="text/javascript"></script>
+	<!--[if lte IE 6]>
+		<style type="text/css">
+			.page {
+				height: 100%;
+			}
+		 </style>
+	<![endif]-->
+
+	<!-- CUSTOM SCRIPTS/CSS END | FIN DES SCRIPTS/CSS PERSONNALISES -->
+
+	<!-- TEMPLATE PRINT CSS BEGINS | DEBUT DU CSS DU GABARIT POUR L'IMPRESSION -->
+	<link href="./Statistics_ Power from Data! Variance and standard deviation_files/pf-if.css" rel="stylesheet" type="text/css">
+	<!-- TEMPLATE PRINT CSS ENDS | FIN DU CSS DU GABARIT POUR L'IMPRESSION -->
+	
+	
+<link rel="stylesheet" type="text/css" media="print" href="./Statistics_ Power from Data! Variance and standard deviation_files/pframeworknrh.css" title="Default">
+<link rel="stylesheet" type="text/css" media="print" href="./Statistics_ Power from Data! Variance and standard deviation_files/pframework.css" title="Default">
+<link rel="stylesheet" type="text/css" media="screen, print" href="./Statistics_ Power from Data! Variance and standard deviation_files/lr.css" title="Default">
+<!-- CSS TEMPLATE INCLUDE ENDS | FIN DE L'INCLUSION -->
+
+<!-- PROGRESSIVE ENHANCEMENT BEGINS | DEBUT DE L'AMELIORATION PROGRESSIVE -->
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/pe-ap.js.download" id="progressive"></script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+		var params = {
+			archived: ""
+		};
+		PE.progress(params);
+	/* ]]> */
+	</script>
+ 
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/jquery_002.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/jquery_003.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/jquery_004.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_002.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_003.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_004.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_005.js.download"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_006-eng.js.download" id="wet-boew_plugin_archived"></script>
+<script type="text/javascript" src="./Statistics_ Power from Data! Variance and standard deviation_files/wet-boew_007.js.download"></script>
+<!-- PROGRESSIVE ENHANCEMENT ENDS | FIN DE L'AMELIORATION PROGRESSIVE -->
+
+<!-- CUSTOM CSS OR SCRIPTS BEGINS | DEBUT DES CSS OU SCRIPTS PERSONNALISES -->
+<!-- InstanceBeginEditable name="Custom CSS and scripts | CSS ou scripts personnalises" -->
+<!-- Insert custom CSS and scripts here | Inserer les CSS et scripts personnalises ici -->
+<!-- InstanceEndEditable -->
+<!-- CUSTOM CSS OR SCRIPTS ENDS | FIN DES CSS OU SCRIPTS PERSONNALISES -->
+<script src="./Statistics_ Power from Data! Variance and standard deviation_files/launch-EN0cf6c2810a2b48f8a4c36502a1b09541.min.js.download"></script><script src="./Statistics_ Power from Data! Variance and standard deviation_files/AppMeasurement.min.js.download" async=""></script><script src="./Statistics_ Power from Data! Variance and standard deviation_files/AppMeasurement_Module_ActivityMap.min.js.download" async=""></script><script>
+// whitelist/blacklist 
+
+/*
+ * Domain Whitelist and domain specific settings
+*/
+
+//Follow this syntax for adding items to the blacklist
+_satellite.gcCustom = {
+    domain_blacklist: ['/analytique-analytics/',
+          	'/gol-ged/awsc/amss/browser/check',
+  			'/gol-ged/awsc/amss/enrol/loginCheck',
+  			'/gol-ged/awsc/amss/enrol/logincheck',
+  			'beta.buyandsell.gc.ca/standing-offers-and-supply-arrangements-application/my-workspace/user-management/',
+  			'beta.achatsetventes.gc.ca/application-d-offres-a-commandes-et-d-arrangements-en-matiere-d-approvisionnement/mon-espace-travail/gestion-des-utilisateurs/',
+  			'gol-ecas-dev.ca.gc.ca/ecas/viewcasehistory.do',
+  			'services3.cic.gc.ca/ecas/viewcasehistory.do',
+  			'buyandsell.gc.ca/standing-offers-and-supply-arrangements-application/my-workspace/user-management/',
+  			'achatsetventes.gc.ca/application-d-offres-a-commandes-et-d-arrangements-en-matiere-d-approvisionnement/mon-espace-travail/gestion-des-utilisateurs/',
+            'checkingvisa.com',
+    ],
+    protocol_blacklist: ['javascript:', 'mailto:', 'tel:', 'blob:', 'data:'],
+
+    /*Follow this syntax for adding items to the whitelist
+    Double check and confirm you are adding to the STAGE or LIVE whitelist
+    Double check spelling and syntax for errors
+    */
+    thisDomain: { AppName: null, LoginStatus: null },
+    domain_whitelist: {
+        stage: {
+		//'...' : {AppName : null, LoginStatus : null}
+		//--- all items MUST inlcude a comma in order to append the next line item, except the last item does not require a comma
+		//Office of the Correctional Investigator
+			'www.oci-bec.gc.ca': { AppName: null, LoginStatus: null },
+			'oci-bec.gc.ca': { AppName: null, LoginStatus: null },
+		//MSCA-MEIIO
+			'srv241-s2.lab.hrdc-drhc.gc.ca': { AppName: null, LoginStatus: null },
+		//Booking Tool
+			'apps.canada.ca': { AppName: null, LoginStatus: null },
+			'gcbooking.adobecqms.net': { AppName: null, LoginStatus: null },
+		//Canada.ca
+			'www.canada.ca': { AppName: null, LoginStatus: null },
+			'canada-stage-aem62s3.adobecqms.net': { AppName: 'canada', LoginStatus: '2' },
+			'canada-dev-aem62s3.adobecqms.net': { AppName: null, LoginStatus: null }, // Enable Pierre testing on AEM DEV
+		//Employment Social Development Canada
+			'cv19benefits-appservice-staging.azurewebsites.net' : { AppName: null, LoginStatus: null },
+			'cv19benefits-appservice-dev.azurewebsites.net' : { AppName: null, LoginStatus: null },
+			'woodpecker.eastus.cloudapp.azure.com' : { AppName: null, LoginStatus: null },
+			'multi-benefits.servicecanada.gc.ca': {AppName : null, LoginStatus : null}, //CERB DFO
+			'multi-benefices.servicecanada.gc.ca': {AppName : null, LoginStatus : null}, //CERB DFO
+			'pesdc.prv': {AppName : null, LoginStatus : null}, //CERB DFO          
+			'covid-benefits.alpha.canada.ca' : { AppName: null, LoginStatus: null },
+			'covid-prestations.alpha.canada.ca' : { AppName: null, LoginStatus: null },
+		//Statistics Canada
+			'statistics.canada.ca' : {AppName : null, LoginStatus : null},
+			'statistique.canada.ca' : {AppName : null, LoginStatus : null},
+			'www.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www5.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www12.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www23.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www35.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www65.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www66.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www76.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www120.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www144.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'www150.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'information-energie.canada.ca' : {AppName : null, LoginStatus : null},
+			'information-energie.statcan.gc.ca': { AppName: null, LoginStatus: null },
+			'energy-information.canada.ca' : {AppName : null, LoginStatus : null},
+			'census.gc.ca' : {AppName : null, LoginStatus : null},
+			'recensement.gc.ca' : {AppName : null, LoginStatus : null},
+			'geosuite.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'geoprod.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'wpaz-ofm12c-ssl-i.services.gc.qat' : {AppName : null, LoginStatus : null},
+			'www5testb.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'srv113-i.lab.hrdc-drhc.gc.ca' : {AppName : null, LoginStatus : null},
+			'src-dev13.wcms.statcan.ca' : {AppName : null, LoginStatus : null},
+			'codweb1.stcpaz.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'codweb2.stcpaz.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'stc-ndm-qa-pc2.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'stc-ndm-qa-pc2.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'prod-p-es-fusion01.stcpaz.statcan.gc.ca' : {AppName : null, LoginStatus : null},
+			'census-qa.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'recensement-qa.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'qa-p-es-ui01.stcpaz.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'dv-vd-sprint1.test.cloud.statcan.ca' :  {AppName : null, LoginStatus : null},
+			'www.dv-vd-sprint1.test.cloud.statcan.ca' : {AppName : null, LoginStatus : null},
+			'wwwqa.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'www76qa.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'geodepot.statcan.gc.ca': {AppName : null, LoginStatus : null},
+			'geodepot.statcan.ca': {AppName : null, LoginStatus : null},
+			'portal.covid.cloud.statcan.ca': { AppName: null, LoginStatus: null },          
+			'analytics-platform.statcan.gc.ca': { AppName: null, LoginStatus: null },   
+			'oc-dev.covid.cloud.statcan.ca': { AppName: null, LoginStatus: null },   
+			'web2-test1.wcms.statcan.ca': { AppName: null, LoginStatus: null },
+			'daaas-dev.covid.cloud.statcan.ca': { AppName: null, LoginStatus: null },
+			'oc-dev.covid.cloud.statcan.ca': { AppName: null, LoginStatus: null },
+		//Public Services Procurement Canada 
+			'buyandsell.gc.ca': { AppName: null, LoginStatus: null },
+			'beta.buyandsell.gc.ca': { AppName: null, LoginStatus: null },
+			'beta.achatsetventes.gc.ca': { AppName: null, LoginStatus: null },
+			'content.buyandsell.gc.ca': { AppName: null, LoginStatus: null },
+			'contenu.achatsetventes.gc.ca': { AppName: null, LoginStatus: null },
+			'webdev02.tpsgc-pwgsc.gc.ca': { AppName: null, LoginStatus: null },
+			'www.tpsgc-pwgsc.gc.ca': { AppName: null, LoginStatus: null },
+			'staging.achatscanadabuys.ca': { AppName: null, LoginStatus: null },
+			'test.publications.gc.ca': { AppName: null, LoginStatus: null },
+		//Global Affairs Canada
+			'www.international.gc.ca': { AppName: null, LoginStatus: null },
+			'w05.international.gc.ca': { AppName: null, LoginStatus: null },
+			'www.tradecommissioner.gc.ca': { AppName: null, LoginStatus: null },
+			'www.deleguescommerciaux.gc.ca': { AppName: null, LoginStatus: null },
+			'travel-ace-m2': { AppName: null, LoginStatus: null },
+			'voyage-ace-m2': { AppName: null, LoginStatus: null },  
+			'core-ombuds.canada.ca': { AppName: null, LoginStatus: null },  
+			'deleguescommerciaux.gc.ca': { AppName: null, LoginStatus: null },  
+			'www.educanada.ca': { AppName: null, LoginStatus: null },    
+   		//Natural Resources Canada
+			'www.nrcan.gc.ca': { AppName: null, LoginStatus: null },
+			'www.rncan.gc.ca': { AppName: null, LoginStatus: null },
+			'nrcan.gc.ca': { AppName: null, LoginStatus: null },
+			'rncan.gc.ca': { AppName: null, LoginStatus: null },
+            'osdp-cumulative-effects-stage.canada.ca': { AppName: null, LoginStatus: null }, 
+			'psdo-effets-cumulatifs-stage.canada.ca': { AppName: null, LoginStatus: null },
+			'qa.dev.osdp.aws.nrcan-rncan.cloud': { AppName: null, LoginStatus: null }, 
+			'www.esrfuns.org': { AppName: null, LoginStatus: null }, 
+			'esrfuns.org': { AppName: null, LoginStatus: null }, 
+			'www.fondsee.org': { AppName: null, LoginStatus: null }, 
+			'fondsee.org': { AppName: null, LoginStatus: null }, 
+			'www.apap.gc.ca': { AppName: null, LoginStatus: null }, 
+			'apap.gc.ca': { AppName: null, LoginStatus: null }, 
+			'www.paap.gc.ca': { AppName: null, LoginStatus: null }, 
+			'paap.gc.ca': { AppName: null, LoginStatus: null }, 
+			'www.npa.gc.ca': { AppName: null, LoginStatus: null }, 
+			'npa.gc.ca': { AppName: null, LoginStatus: null }, 
+			'www.apn.gc.ca': { AppName: null, LoginStatus: null }, 
+			'apn.gc.ca': { AppName: null, LoginStatus: null }, 
+			'www.mpmo.gc.ca': { AppName: null, LoginStatus: null }, 
+			'mpmo.gc.ca': { AppName: null, LoginStatus: null }, 
+			'www.bggp.gc.ca': { AppName: null, LoginStatus: null }, 
+			'bggp.gc.ca': { AppName: null, LoginStatus: null }, 
+			'stg-osdp-psdo.canada.ca': { AppName: null, LoginStatus: null }, 
+			'uat-osdp-psdo.canada.ca': { AppName: null, LoginStatus: null },
+            'osdp-cumulative-effects.canada.ca': { AppName: null, LoginStatus: null },
+            'psdo-effets-cumulatifs.canada.ca': { AppName: null, LoginStatus: null },
+            'qa.pst.osdp.aws.nrcan-rncan.cloud': { AppName: null, LoginStatus: null },
+		//Agriculture and Agri Food Canada
+			'www.agr.gc.ca': { AppName: null, LoginStatus: null },
+			'agr.gc.ca': { AppName: null, LoginStatus: null },
+			'www-tst.agr.gc.ca': { AppName: null, LoginStatus: null },
+			//'marquecanadabrand.agr.gc.ca': { AppName: null, LoginStatus: null },
+			'canadabrandgocaccess.agr.gc.ca': { AppName: null, LoginStatus: null },
+		//Canadian Food Inspection Agency
+			'inspection.gc.ca': { AppName: null, LoginStatus: null },
+			'www.inspection.gc.ca': { AppName: null, LoginStatus: null },
+			'merlin.cfia-acia.inspection.gc.ca': { AppName: null, LoginStatus: null },
+		//Public Safety
+			'beta.infomedia.gc.ca': { AppName: null, LoginStatus: null },
+		//Correctional Investigator Canada
+            //Removed
+        //Public Service Commission
+			'intracom': { AppName: null, LoginStatus: null },
+			'intradev': { AppName: null, LoginStatus: null },
+			'extranet.psc-cfp.gc.ca': { AppName: null, LoginStatus: null },
+			'devextranet.psc-cfp.gc.ca': { AppName: null, LoginStatus: null },
+			'test-psjobs-emploisfp.psc-cfp.gc.ca': { AppName: null, LoginStatus: null },
+		//Library Archives Canada
+			'dev-www.bac-lac.gc.ca': { AppName: null, LoginStatus: null },
+            'cipbookentry-d.dev.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // CIPBookEntry
+            'v41extcapps01-d.dev.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // DHCP
+            'tdg-grt-d.dev.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // GovRecordsTransfer
+            'event-d.dev.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // LAC Events
+            'canadiana-d.dev.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // LibraryCanadianNumberGenerator app
+            'sigles-symbols-d.bac-lac.gc.ca': { AppName: null, LoginStatus: null }, // LibrarySymbolApplication
+		// Elections Canada
+			'ecdev_maint-pesc.ecade.elections.ca': { AppName: null, LoginStatus: null },
+			'ispdevwww.elections.ca': { AppName: null, LoginStatus: null },
+			'www.cef-cce.ca': { AppName: null, LoginStatus: null }, //Commissioner of Canada Elections
+		//Impact Assessment Agency of Canada
+			'ceaa.qa.ncr.ec.gc.ca': { AppName: null, LoginStatus: null },
+			'ceaa.dev.ec.gc.ca': { AppName: null, LoginStatus: null },
+		//Health Canada
+			'cfg-qa.hres.ca': { AppName: null, LoginStatus: null },
+			'cfg-stage.hres.ca': { AppName: null, LoginStatus: null },
+			'food-guide.canada.ca': { AppName: null, LoginStatus: null },
+		//Superintendent of Financial Institutions Canada (Office of the)
+			'devirppub.devosfi.ca': { AppName: null, LoginStatus: null },
+			'uatirppub.devosfi.ca': { AppName: null, LoginStatus: null },
+         //Canada Revenue Agency
+            'cp-ut.isvcs.net': { AppName: null, LoginStatus: null },
+            'rp-ut.isvcs.net': { AppName: null, LoginStatus: null },
+            'cp-ut2.isvcs.net': { AppName: null, LoginStatus: null },
+            'rp-ut2.isvcs.net': { AppName: null, LoginStatus: null },
+            'ams-sga-si.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-si.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'ams-sga-si2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-si2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'ams-sga-ua.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-ua.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'ams-sga-ua2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-ua2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps1.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps2.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps3.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps4.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps5.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps6.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps7.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps8.ams-sga-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-ot.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps1.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps2.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps3.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps4.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps5.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps6.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps7.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'apps8.ams-sga-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'cms-sgj-ot2.cra-arc.gc.ca': { AppName: null, LoginStatus: null },
+            'ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'cms-sgj.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps1.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps2.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps3.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps4.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps5.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps6.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps7.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+            'apps8.ams-sga.cra-arc.gc.ca': { AppName: null, LoginStatus: null }, //Prod
+          //Women and Gender Equality Canada
+            'canada': { AppName: null, LoginStatus: null },
+            'canada/testing/page1-fr.html': { AppName: null, LoginStatus: null },
+            'canada/testing/page1-en.html': { AppName: null, LoginStatus: null },
+            'intranettest': { AppName: null, LoginStatus: null },
+          // Justice
+            'justice.gc.ca': { AppName: null, LoginStatus: null },
+          
+
+        
+        
+        },
+        live: {
+        //'...' : {AppName : null, LoginStatus : null}
+           //Employment Social Development Canada
+            'covid-benefits.alpha.canada.ca': {AppName : null, LoginStatus : null},
+            'covid-prestations.alpha.canada.ca': {AppName : null, LoginStatus : null},
+            'multi-benefits.servicecanada.gc.ca': {AppName : null, LoginStatus : null}, //CERB DFO
+            'multi-benefices.servicecanada.gc.ca': {AppName : null, LoginStatus : null}, //CERB DFO
+          //Office of the Correctional Investigator
+            'www.oci-bec.gc.ca': { AppName: null, LoginStatus: null },
+            'oci-bec.gc.ca': { AppName: null, LoginStatus: null },
+           // Natural Resources Canada
+            'osdp-cumulative-effects.canada.ca': { AppName: null, LoginStatus: null },
+            'psdo-effets-cumulatifs.canada.ca': { AppName: null, LoginStatus: null },
+            'osdp-psdo.canada.ca': { AppName: null, LoginStatus: null },
+          //Elections Canada
+            'cef-cce.ca': { AppName: null, LoginStatus: null },
+            'www.cef-cce.ca': { AppName: null, LoginStatus: null },
+          // Public Services Procurement Canada
+            'www.tpsgc-pwgsc.gc.ca': { AppName: null, LoginStatus: null },
+          // Public Service Commission of Canada
+            'intracom': { AppName: null, LoginStatus: null },
+            'intracom.psc-cfp.gc.ca': { AppName: null, LoginStatus: null },
+            'extranet.psc-cfp.gc.ca': { AppName: null, LoginStatus: null },
+          // Global Affairs Canada
+            'www.international.gc.ca': { AppName: null, LoginStatus: null },
+            'international.gc.ca': { AppName: null, LoginStatus: null },
+            'travel.gc.ca': { AppName: null, LoginStatus: null },
+            'voyage.gc.ca': { AppName: null, LoginStatus: null },
+            'tradecommissioner.gc.ca': { AppName: null, LoginStatus: null },
+            'www.tradecommissioner.gc.ca': { AppName: null, LoginStatus: null },
+            'educanada.ca': { AppName: null, LoginStatus: null },
+            'www.educanada.ca': { AppName: null, LoginStatus: null },
+            'core-ombuds.canada.ca': { AppName: null, LoginStatus: null },
+            'www.core-ombuds.canada.ca': { AppName: null, LoginStatus: null },
+            'deleguescommerciaux.gc.ca': { AppName: null, LoginStatus: null }, 
+            'www.deleguescommerciaux.gc.ca': { AppName: null, LoginStatus: null }, 
+          //Canadian Food Inspection Agency
+            'inspection.gc.ca': { AppName: null, LoginStatus: null },
+            'www.inspection.gc.ca': { AppName: null, LoginStatus: null },
+            'merlin.cfia-acia.inspection.gc.ca': { AppName: null, LoginStatus: null },
+            'inspection.canada.ca': { AppName: null, LoginStatus: null },
+           //Agriculture and Agri Food Canada
+            'www.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'agr.gc.ca': { AppName: null, LoginStatus: null },
+            'www-tst.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'marquecanadabrand.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'www.marquecanadabrand.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'brandcanada.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'www.brandcanada.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'canadabrand.agr.gc.ca': { AppName: null, LoginStatus: null },
+            'www.canadabrand.agr.gc.ca': { AppName: null, LoginStatus: null },
+          //Library Archives Canada
+            'www.bac-lac.gc.ca': { AppName: null, LoginStatus: null },
+          //Public Service Commission
+            'emploisfp-psjobs.cfp-psc.gc.ca': { AppName: null, LoginStatus: null },
+          //Health Canada
+            'food-guide.canada.ca': { AppName: null, LoginStatus: null },
+            'guide-alimentaire.canada.ca': { AppName: null, LoginStatus: null },
+          //Statistics Canada
+			'statistics.canada.ca' : {AppName : null, LoginStatus : null},
+			'statistique.canada.ca' : {AppName : null, LoginStatus : null},
+            'www.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www150.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www12.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www120.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www144.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www65.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www66.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www76.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'information-energie.canada.ca': { AppName: null, LoginStatus: null },
+            'energy-information.canada.ca': { AppName: null, LoginStatus: null },
+            'census.gc.ca': { AppName: null, LoginStatus: null },
+            'recensement.gc.ca': { AppName: null, LoginStatus: null },
+            'www23.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www35.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'www5.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'geosuite.statcan.gc.ca': { AppName: null, LoginStatus: null },
+            'geoprod.statcan.gc.ca': { AppName: null, LoginStatus: null },
+          //Canada Revenue Agency
+          //Impact Assessment Agency of Canada 
+            'elearning.iaac-aeic.gc.ca': { AppName: null, LoginStatus: null },
+            'apprentissage-en-ligne.aeic-iaac.gc.ca': { AppName: null, LoginStatus: null },
+          
+          
+          
+          
+        },
+  },
+ internal_filters : [
+ //this is used for outbound link tracking
+    //CANADA.CA (AEM)	
+		,'iv.apps.canada.ca' // Booking Tool Prod
+		,'v.apps.canada.ca' // Booking Tool Prod
+		,'gcbooking.adobecqms.net' //Booking Tool
+		,'localhost'
+		,'universallabs.org' 
+		,'dev1.canada.ca'
+		,'dev3.canada.ca'
+		,'www1.canada.ca' 
+		,'canada.ca' 
+		,'www.canada.ca' 
+		,'staging65s3.canada.ca' // AEM 6.5
+		,'canada-aem651-s3-dev.adobecqms.net' // AEM 6.5
+		,'canada-aem651-s3-stage.adobecqms.net' // AEM 6.5
+		,'canada-aem652-s3-stage.adobecqms.net' // AEM 6.5
+		,'canada-aem653-s3-stage.adobecqms.net' // AEM 6.5
+		,'staging-recherche.gc.ca' // Search
+		,'recherche.gc.ca' 
+		,'recherche-search.gc.ca' 
+		,'search.gc.ca' 
+		,'search-recherche.gc.ca'
+		,'www.recherche.gc.ca' 
+		,'www.recherche-search.gc.ca' 
+		,'www.search.gc.ca' 
+		,'www.search-recherche.gc.ca' 
+		,'canada-service-corps.canada.ca' // PM Service Corps
+		,'service-jeunesse.canada.ca' 
+	// Library and Archives
+		,'bac-lac.gc.ca'
+		,'lac-bac.gc.ca'
+		,'www.bac-lac.gc.ca'
+		,'www.lac-bac.gc.ca'
+		,'canadiana-qa.dev.bac-lac.gc.ca'
+		,'central.bac-lac.gc.ca'
+		,'central-d.dev.bac-lac.gc.ca'
+		,'webdev-srv.dev.bac-lac.gc.ca'
+		,'webqa-srv01.qa.bac-lac.gc.ca'
+		,'ucc-qa'
+		,'v41extweb01-d.services.bac-lac.gc.ca'
+		,'canadiana.bac-lac.gc.ca'
+		,'www.canadiana.bac-lac.gc.ca' 
+		,'cipbookentry.bac-lac.gc.ca' 
+		,'cipbookentry-qa.dev.bac-lac.gc.ca'
+		,'www.cipbookentry.bac-lac.gc.ca' 
+		,'co-lab.bac-lac.gc.ca' 
+		,'www.co-lab.bac-lac.gc.ca' 
+		,'sigles-symbols-qa.bac-lac.gc.ca'
+		,'sigles-symbols.bac-lac.gc.ca' 
+		,'www.sigles-symbols.bac-lac.gc.ca' 
+		,'event-qa'
+		,'event.bac-lac.gc.ca' 
+		,'www.event.bac-lac.gc.ca' 
+		,'nouvelle-france.org' 
+		,'www.collectionscanada.gc.ca'
+		,'cipbookentry-d.dev.bac-lac.gc.ca'
+		,'v41extcapps01-d.dev.bac-lac.gc.ca'
+		,'tdg-grt-d.dev.bac-lac.gc.ca'
+		,'event-d.dev.bac-lac.gc.ca'
+		,'canadiana-d.dev.bac-lac.gc.ca'
+		,'sigles-symbols-d.bac-lac.gc.ca'
+		,'dev-www.bac-lac.gc.ca'
+		,'financement-funding.bac-lac.gc.ca'
+		,'tdg-grt.bac-lac.gc.ca'
+		,'event.bac-lac.gc.ca'
+		,'sigles-symbols.bac-lac.gc.ca'
+		,'webdev-srv.dev.bac-lac.gc.ca'	
+	    ,'webqa-srv01.qa.bac-lac.gc.ca'
+	// Impact Assessment Agency of Canada
+		,'acee.gc.ca' // Old domain (CEAA)	
+		,'acee-ceaa.gc.ca' 
+		,'www.acee.gc.ca' 
+		,'www.acee-ceaa.gc.ca' 
+		,'ceaa.dev.ec.gc.ca' 
+		,'ceaa.gc.ca' 
+		,'ceaa-acee.gc.ca' 
+		,'www.ceaa.gc.ca' 
+		,'www.ceaa-acee.gc.ca' 
+		,'ceaa.qa.ncr.ec.gc.ca'
+		,'www.iaac-acei.gc.ca' // New domain (IAAC)
+		,'iaac-acei.gc.ca'
+		,'www.acei-iaac.gc.ca'
+		,'acei-iaac.gc.ca'
+		,'www.iaac.gc.ca'
+		,'iaac.gc.ca'
+		,'www.acei.gc.ca'
+		,'acei.gc.ca'
+		,'www.iaac-aeic.gc.ca'
+		,'iaac-aeic.gc.ca'
+		,'www.aeic-iaac.gc.ca'
+		,'aeic-iaac.gc.ca'
+		,'www.aeic.gc.ca'
+		,'aeic.gc.ca'
+		,'elearning.iaac-aeic.gc.ca'
+		,'apprentissage-en-ligne.aeic-iaac.gc.ca'
+    // Agriculture and Agri-Food Canada
+		,'www.agr.gc.ca' 
+		,'agr.gc.ca' 
+		,'www-dev.agr.gc.ca' 
+		,'intranet.agr.gc.ca'
+		,'www-tst.agr.gc.ca'
+		,'canadabrandgocaccess.agr.gc.ca'
+		,'canadabrandgocaccess.agr.gc.ca'	
+		,'www.canadabrand.agr.gc.ca'	
+		,'canadabrand.agr.gc.ca'	
+		,'brandcanada.agr.gc.ca'	
+		,'www.brandcanada.agr.gc.ca'	
+		,'marquecanadabrand.agr.gc.ca'	
+		,'www.marquecanadabrand.agr.gc.ca'
+    // Treasury Board Secretariat	
+		,'atip-aiprp.tbs-sct.gc.ca' 
+		,'uat.atip-aiprp.tbs-sct.gc.ca' 
+		,'pre-prod.atip-aiprp.tbs-sct.gc.ca' 
+		,'authoring.publiservice.tbs-sct.gc.ca' 
+		,'authoring.www.tbs-sct.gc.ca'
+		,'staging.open.canada.ca'
+		,'search-staging.open.canada.ca'
+		,'open.canada.ca'
+		,'search.open.canada.ca'
+		,'staging.atip-aiprp.tbs-sct.gc.ca'
+		,'uat1.atip-aiprp.tbs-sct.gc.ca'
+		,'uat.tbs-sct.gc.ca'
+		,'www.tbs-sct.gc.ca'
+    // Statistics Canada
+		,'statistics.canada.ca'
+		,'statistique.canada.ca'	
+		,'www.statcan.gc.ca'
+		,'www5.statcan.gc.ca'
+		,'www12.statcan.gc.ca'
+		,'www23.statcan.gc.ca'
+		,'www35.statcan.gc.ca'
+		,'www65.statcan.gc.ca'
+		,'www66.statcan.gc.ca'
+		,'www76.statcan.gc.ca'
+		,'www120.statcan.gc.ca'
+		,'www144.statcan.gc.ca'
+		,'www150.statcan.gc.ca'
+		,'information-energie.canada.ca'
+		,'information-energie.statcan.gc.ca'
+		,'energy-information.canada.ca'
+		,'census.gc.ca'
+		,'recensement.gc.ca'
+		,'geosuite.statcan.gc.ca'
+		,'geoprod.statcan.gc.ca'
+		,'wpaz-ofm12c-ssl-i.services.gc.qat'
+		,'www5testb.statcan.gc.ca'
+		,'srv113-i.lab.hrdc-drhc.gc.ca'
+		,'src-dev13.wcms.statcan.ca'
+		,'codweb1.stcpaz.statcan.gc.ca'
+		,'codweb2.stcpaz.statcan.gc.ca'
+		,'stc-ndm-qa-pc2.statcan.gc.ca'
+		,'stc-ndm-qa-pc2.statcan.gc.ca'
+		,'prod-p-es-fusion01.stcpaz.statcan.gc.ca'
+		,'census-qa.statcan.gc.ca'
+		,'recensement-qa.statcan.gc.ca'
+		,'qa-p-es-ui01.stcpaz.statcan.gc.ca'
+		,'dv-vd-sprint1.test.cloud.statcan.ca'
+		,'www.dv-vd-sprint1.test.cloud.statcan.ca'
+		,'wwwqa.statcan.gc.ca'
+		,'www76qa.statcan.gc.ca'
+		,'geodepot.statcan.gc.ca'
+		,'geodepot.statcan.ca'
+		,'portal.covid.cloud.statcan.ca'          
+		,'analytics-platform.statcan.gc.ca'   
+		,'oc-dev.covid.cloud.statcan.ca'   
+		,'web2-test1.wcms.statcan.ca'
+ 		,'daaas-dev.covid.cloud.statcan.ca'
+		,'oc-dev.covid.cloud.statcan.ca'
+	// Employment Social Developmet Canada
+		,'disclosure.esdc.gc.ca' 
+		,'disclosure.servicecanada.gc.ca' 
+		,'www.canadabenefits.gc.ca' 
+		,'www.canadabenefits.gc.ca' 
+		,'wpaz-ofm12c-ssl-i.services.gc.qat' 
+		,'wpaz-ofm-i.sade-edap.prv' 
+		,'wpaz-ofm-i-e-esdc.services.gc.qat' 
+		,'prestationsducanada.gc.ca' 
+		,'www.prestationsducanada.gc.ca' 
+		,'negotech.labour.gc.ca'
+		,'negotheque.travail.gc.ca'
+		,'mlapesd3963v-s2tst-negotech.intra.dev'
+		,'cv19benefits-appservice-staging.azurewebsites.net'
+		,'cv19benefits-appservice-dev.azurewebsites.net'
+		,'covid-benefits.alpha.canada.ca'
+		,'covid-prestations.alpha.canada.ca'
+		,'woodpecker.eastus.cloudapp.azure.com'
+		,'multi-benefits.servicecanada.gc.ca' //CERB DFO
+		,'multi-benefices.servicecanada.gc.ca' //CERB DFO
+		,'pesdc.prv'
+		,'esin-sandbox.powerappsportals.com'	
+		,'srv2140-i2.services.gc.qat'	
+		,'srv2140-s.services.gc.qat'
+		,'sin-nas.canada.ca'
+		,'eservice-uat.powerappsportals.com'
+	// Elections
+		,'ec9wbstepfpkedu' 
+		,'elections.ca' 
+		,'www.elections.ca' 
+		,'enr.elections.ca' 
+		,'www.test.elections.ca' 
+		,'enr.test.elections.ca'
+		,'ereg.elections.ca' 
+		,'www.ereg.elections.ca' 
+		,'ispdevwww.elections.ca' 
+		,'secure.elections.ca' 
+		,'secure.test.elections.ca' 
+		,'rspispweb01-ste-demo1.elections.ca'
+		,'ereg.test.elections.ca'
+		,'ereg.elections.ca'
+		,'www.ereg.elections.ca'
+		,'ecdev_maint-pesc.ecade.elections.ca'
+		,'www.ecdev_maint-pesc.ecade.elections.ca'
+		,'cef-cce.ca'
+		,'www.cef-cce.ca'
+		,'ispdevwww.elections.ca'
+		,'ec9wbedtpfpked'
+		,'ecdevmaint-pesc.ecade.elections.ca'
+	// Natural Resources Canada
+		,'equalby30.org' 
+		,'www.equalby30.org' 
+		,'nrcan.gc.ca' 
+		,'www.nrcan.gc.ca' 
+		,'rncan.gc.ca' 
+		,'www.rncan.gc.ca' 
+		,'rncanengagenrcan.ca' 
+		,'www.rncanengagenrcan.ca' 
+		,'www.rncanengagenrcan.ca' 
+		,'test.nrcan.gc.ca' 
+		,'test.rncan.gc.ca' 
+		,'www.test.nrcan.gc.ca' 
+		,'www.test.rncan.gc.ca' 
+		,'minescanada.ca'
+		,'www.minescanada.ca'
+		,'globe-cem-mi.yourballistic.com'
+		,'esrfunds.org'
+		,'www.esrfunds.org'
+		,'www.fondsee.org'
+		,'fondsee.org'	
+		,'www.npa.gc.ca'	
+		,'npa.gc.ca'	
+		,'www.apn.gc.ca'	
+		,'www.mpmo.gc.ca'	
+		,'www.bggp.gc.ca'	
+		,'www.apap.gc.ca'	
+		,'www.paap.gc.ca'
+		,'cem-mi-vancouver2019.ca'
+		,'www.cem-mi-vancouver2019.ca'
+		,'cmep-mi-vancouver2019.ca'
+		,'apap.gc.ca'
+		,'paap.gc.ca'
+		,'www.esrfunds.org'
+		,'www.fondsee.org'
+		,'mpmo.gc.ca'
+		,'bggp.gc.ca'
+		,'npa.gc.ca'
+		,'apn.gc.ca'
+		,'natural-resources.canada.ca' //new canada.ca subdomainsdomain
+		,'ressources-naturelles.canada.ca' //new canada.ca subdomain
+		,'nrcan.canada.ca' //new canada.ca subdomain
+		,'rncan.canada.ca' //new canada.ca subdomain
+		,'nrcan-rncan.canada.ca' //new canada.ca subdomain
+		,'rncan-nrcan.canada.ca' //new canada.ca subdomain
+		,'osdp-cumulative-effects-stage.canada.ca'
+		,'psdo-effets-cumulatifs-stage.canada.ca'
+		,'qa.dev.osdp.aws.nrcan-rncan.cloud'
+		,'osdp-cumulative-effects.canada.ca'
+		,'psdo-effets-cumulatifs.canada.ca'
+		,'www.dev.nrcan.gc.ca'
+		,'dev.nrcan.gc.ca'
+		,'www.dev.rncan.gc.ca'
+		,'dev.rncan.gc.ca' 
+		,'dev.npa.gc.ca'
+		,'dev.esrfunds.org'
+		,'dev.mpmo.gc.ca'
+		,'dev.apn.gc.ca'
+		,'dev.fondsee.org'
+		,'dev.bggp.gc.ca'
+		,'osdp-psdo.canada.ca'
+		,'stg-osdp-psdo.canada.ca'
+		,'uat-osdp-psdo.canada.ca'
+        ,'qa.pst.osdp.aws.nrcan-rncan.cloud'
+	// Office of the procurement ombudsman
+		,'opo-boa.gc.ca' 
+		,'dev.boa-opo.gc.ca' 
+		,'xterra3w2k16.ncr.pwgsc.gc.ca'
+		,'secure.opo-boa.gc.ca'
+	// MSCA-MEIIO
+		,'srv113-i.lab.hrdc-drhc.gc.ca' 
+		,'srv113-u.lab.hrdc-drhc.gc.ca' 
+		,'srv136.services.gc.ca' 
+		,'srv2140-u.services.gc.qat' 
+		,'srv241-s2.lab.hrdc-drhc.gc.ca' 
+	// Transport Canada
+		,'transport-dev' 
+	// Health Canada
+		,'a8047055' 
+		,'cfgtest.canadacentral.cloudapp.azure.com' //food guide
+		,'vmportaltest.canadacentral.cloudapp.azure.com'
+		,'prcitestfr.canadacentral.cloudapp.azure.com'
+		,'food-guide.canada.ca'
+		,'www.food-guide.canada.ca'
+		,'www.guide-alimentaire.canada.ca'
+		,'guide-alimentaire.canada.ca'
+		,'clinical-information.canada.ca'
+		,'renseignements-cliniques.canada.ca'
+		,'cfg-qa.hres.ca'
+		,'cfg-stage.hres.ca'
+		,'food-guide-stage.hpfb-dgpsa.ca'
+	// Immigration Refugee Canada
+		,'www.cic.gc.ca'
+		,'cic.gc.ca'
+		,'eservices1.ci.gc.ca'
+		,'gol-ecas-dev.ci.gc.ca'
+		,'www-dev.ic.gc.ca'
+		,'eservices.cic.gc.ca'
+		,'services3.cic.gc.ca'
+		,'eservices5.ci.gc.ca'
+	// Canada Revenue Agency
+		,'cra-arc.gc.ca'
+		,'arc-cra.gc.ca'
+		,'cra.gc.ca'
+		,'arc.gc.ca'
+		,'www.cra-arc.gc.ca'
+		,'www.arc-cra.gc.ca'
+		,'www.cra.gc.ca'
+		,'www.arc.gc.ca'
+		,'apps.cra-arc.gc.ca'
+		//CRA UT
+		,'cp-ut.isvcs.net'
+		,'rp-ut.isvcs.net'
+		,'cp-ut2.isvcs.net'
+		,'rp-ut2.isvcs.net'
+		//CRA SI
+		,'ams-sga-si.cra-arc.gc.ca'
+		,'cms-sgj-si.cra-arc.gc.ca'
+		,'ams-sga-si2.cra-arc.gc.ca'
+		,'cms-sgj-si2.cra-arc.gc.ca'
+		//CRA UA
+		,'ams-sga-ua.cra-arc.gc.ca'
+		,'cms-sgj-ua.cra-arc.gc.ca'
+		,'ams-sga-ua2.cra-arc.gc.ca'
+		,'cms-sgj-ua2.cra-arc.gc.ca'
+		//CRA OT	
+		,'apps1.ams-sga-ot.cra-arc.gc.ca'
+		,'apps2.ams-sga-ot.cra-arc.gc.ca'
+		,'apps3.ams-sga-ot.cra-arc.gc.ca'
+		,'apps4.ams-sga-ot.cra-arc.gc.ca'
+		,'apps5.ams-sga-ot.cra-arc.gc.ca'
+		,'apps6.ams-sga-ot.cra-arc.gc.ca'
+		,'apps7.ams-sga-ot.cra-arc.gc.ca'
+		,'apps8.ams-sga-ot.cra-arc.gc.ca'
+		,'cms-sgj-ot.cra-arc.gc.ca'
+		,'apps1.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps2.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps3.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps4.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps5.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps6.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps7.ams-sga-ot2.cra-arc.gc.ca'
+		,'apps8.ams-sga-ot2.cra-arc.gc.ca'
+		,'cms-sgj-ot2.cra-arc.gc.ca'
+		,'ams-sga.cra-arc.gc.ca'
+		,'cms-sgj.cra-arc.gc.ca'
+		,'apps1.ams-sga.cra-arc.gc.ca'
+		,'apps2.ams-sga.cra-arc.gc.ca'
+		,'apps3.ams-sga.cra-arc.gc.ca'
+		,'apps4.ams-sga.cra-arc.gc.ca'
+		,'apps5.ams-sga.cra-arc.gc.ca'
+		,'apps6.ams-sga.cra-arc.gc.ca'
+		,'apps7.ams-sga.cra-arc.gc.ca'
+		,'apps8.ams-sga.cra-arc.gc.ca'
+		,'www.ams-sga.cra-arc.gc.ca'
+		,'www.cms-sgj.cra-arc.gc.ca'
+		,'www.apps1.ams-sga.cra-arc.gc.ca'
+		,'www.apps2.ams-sga.cra-arc.gc.ca'
+		,'www.apps3.ams-sga.cra-arc.gc.ca'
+		,'www.apps4.ams-sga.cra-arc.gc.ca'
+		,'www.apps5.ams-sga.cra-arc.gc.ca'
+		,'www.apps6.ams-sga.cra-arc.gc.ca'
+		,'www.apps7.ams-sga.cra-arc.gc.ca'
+		,'www.apps8.ams-sga.cra-arc.gc.ca'
+		,'apps-ut.cra-arc.gc.ca'
+		,'apps-ua.cra-arc.gc.ca' 
+		,'apps-ut.isvcs.net'
+		,'apps-ua.isvcs.net'
+		,'apps-ut2.cra-arc.gc.ca'
+		,'apps-ua2.cra-arc.gc.ca'
+		,'apps-ut2.isvcs.net'
+		,'apps-ua2.isvcs.net'
+		,'performance.alpha.canada.ca'
+		,'cp-ut.isvcs.net'
+		,'apps-ut.isvcs.net'
+		,'xterra3w2k16.dev.ad.itsso-ospti.gc.ca'
+	// Public Services procurement Canada
+		,'test.publications.gc.ca'
+		,'publications.gc.ca'
+		,'www.publications.gc.ca'
+		,'content.buyandsell.gc.ca'
+		,'beta.buyandsell.gc.ca'
+		,'beta.achatsetventes.gc.ca'
+		,'test.buyandsell.gc.ca'	
+		,'test.achatsetventes.gc.ca'
+		,'webdev02.tpsgc-pwgsc.gc.ca'
+		,'www.tpsgc-pwgsc.gc.ca'
+		,'buyandsell.gc.ca'
+		,'achatsetventes.gc.ca'
+		,'staging.achatscanadabuys.ca'
+		,'m8-test.achatscanadabuys.ca'
+		,'m8-test.achatscanadabuys.ca'
+		,'m8-dev-collab.achatscanadabuys.ca'
+		,'webdev01.tpsgc-pwgsc.gc.ca'
+		,'webdev02.tpsgc-pwgsc.gc.ca'
+		,'webdev08.tpsgc-pwgsc.gc.ca'
+	// Global Affiars Canada
+		,'www.international.gc.ca'
+		,'international.gc.ca'
+		,'www.tradecommissioner.gc.ca'
+		,'tradecommissioner.gc.ca'
+		,'www.deleguescommerciaux.gc.ca'
+		,'deleguescommerciaux.gc.ca'
+		,'travel-ace-m2'
+		,'voyage-ace-m2' 
+		,'travel.gc.ca'
+		,'voyage.gc.ca' 
+		,'core-ombuds.canada.ca'
+		,'www.educanada.ca'
+	// Justice
+		,'www-uat.justice.gc.ca'
+		,'limsdev.justice.gc.ca'
+		,'dmteam-uat.justice.gc.ca'
+		,'equipesm-uat.justice.gc.ca'
+		,'www-uat.victimsfirst.gc.ca'
+		,'www-uat.victimesdabord.gc.ca'
+		,'jusnet-uat.justice.gc.ca'
+		,'www-uat.victimsweek.gc.ca'
+		,'www-uat.semainedesvictimes.gc.ca'
+		,'www.justice.gc.ca'
+		,'justice.gc.ca'
+		,'dmteam.justice.gc.ca'
+		,'equipesm.justice.gc.ca'
+		,'www.laws-lois.justice.gc.ca'
+		,'laws-lois.justice.gc.ca'
+		,'lois-laws.justice.gc.ca'
+		,'www.lois-laws.justice.gc.ca'
+		,'www.ppsc.gc.ca'
+		,'ppsc.gc.ca'
+		,'www.victimsweek.gc.ca'
+		,'www.semainedesvictimes.gc.ca'
+		,'victimsweek.gc.ca'
+		,'semainedesvictimes.gc.ca'
+		,'jusnet.justice.gc.ca'
+	// Canadian Food Inspection Agency
+		,'inspection.gc.ca'
+		,'www.inspection.gc.ca'
+		,'inspection.canada.ca'
+		,'www.inspection.canada.ca'
+		,'active.inspection.gc.ca'
+		,'www.active.inspection.gc.ca'
+		,'merlin.cfia-acia.inspection.gc.ca'
+		,'apps.merlin.cfia-acia.inspection.gc.ca'
+		,'www.apps.merlin.cfia-acia.inspection.gc.ca'
+		,'inspection.canada.ca'
+	// Public Safety Canada
+		,'infomediadev'
+		,'infomedia.gc.ca'
+		,'www.infomedia.gc.ca'
+		,'beta.infomedia.gc.ca'
+		,'api.infomedia.gc.ca'
+		,'icdev'
+		,'psdev'
+		,'gpdev'
+		,'psdev'
+		,'gpdev'
+		,'ecdev'
+		,'icdev'
+		,'publicsafety.gc.ca'
+		,'www.publicsafety.gc.ca'
+		,'securitepublique.gc.ca'
+		,'www.securitepublique.gc.ca'
+		,'getprepared.gc.ca'
+		,'www.getprepared.gc.ca'
+		,'preparez-vous.gc.ca'
+		,'www.preparez-vous.gc.ca'
+		,'erc-cee.gc.ca'
+		,'www.erc-cee.gc.ca'
+		,'infocentral'
+		,'infocentrale'
+		,'infocentral'
+	// RCMP External Review Committee
+		,'ercdev'
+	// Open Government
+		,'staging.open.canada.ca'
+		,'stadification.ouvert.canada.ca'
+		,'open.canada.ca'
+		,'ouvert.canada.ca'
+		,'search.open.canada.ca'
+		,'rechercher.ouvert.canada.ca'
+	// Correctional Investigator Canada
+		,'www.oci-bec.gc.ca'
+		,'oci-bec.gc.ca'
+	//Public Service Commission
+		,'intracom'
+		,'intradev'
+		,'intracom.psc-cfp.gc.ca'
+		,'extranet.psc-cfp.gc.ca'
+		,'devextranet.psc-cfp.gc.ca'
+		,'test-psjobs-emploisfp.psc-cfp.gc.ca'
+		,'emploisfp-psjobs.cfp-psc.gc.ca'
+	//Superintendent of Financial Institutions Canada (Office of the)
+		,'devirppub.devosfi.ca'
+		,'uatirppub.devosfi.ca'
+		,'uatirppub.osfi-bsif.gc.ca'	
+		,'uatirppub.devosfi.ca'	
+	//Women and Gender Equality Canada	
+		,'canada/testing/page1-fr.html'	
+		,'canada/testing/page1-en.html'	
+		,'intranettest'	
+	//Canadian Space Agency
+		,'devcorpo'
+		,'asc-csa.gc.ca'
+		,'www.asc-csa.gc.ca'
+		,'csa-asc.gc.ca'
+		,'www.csa-asc.gc.ca'
+
+	
+
+ ]
+};
+
+
+
+
+/* ===== Set data elements that rely on whitelist ===== */
+
+/*jsAbort START*/
+var dirs;
+var list;
+var h = document.location.hostname.toLowerCase(); //host
+var j = document.location.pathname.toLowerCase(); //path
+
+if (_satellite.buildInfo.environment == "production") {
+    list = _satellite.gcCustom.domain_whitelist.live;
+}
+else {
+    list = _satellite.gcCustom.domain_whitelist.stage;
+    //list = _satellite.gcCustom.domain_whitelist.live; //FOR TESTING ON LIVE ONLY! REMOVE
+
+}
+
+//directories to exclude
+///Input list. Each item must be inputed with its own quotation marks and be separted using a comma
+/// excl list cannot be empty
+excl = ['/analytique-analytics/',
+        '/gol-ged/awsc/amss/browser/check',
+  		'/gol-ged/awsc/amss/enrol/loginCheck',
+  		'/gol-ged/awsc/amss/enrol/logincheck',
+  		'beta.buyandsell.gc.ca/standing-offers-and-supply-arrangements-application/my-workspace/user-management/',
+  		'beta.achatsetventes.gc.ca/application-d-offres-a-commandes-et-d-arrangements-en-matiere-d-approvisionnement/mon-espace-travail/gestion-des-utilisateurs/',
+  		'gol-ecas-dev.ca.gc.ca/ecas/viewcasehistory.do',
+ 		'services3.cic.gc.ca/ecas/viewcasehistory.do',
+  		'buyandsell.gc.ca/standing-offers-and-supply-arrangements-application/my-workspace/user-management/',
+  		'achatsetventes.gc.ca/application-d-offres-a-commandes-et-d-arrangements-en-matiere-d-approvisionnement/mon-espace-travail/gestion-des-utilisateurs/',
+        'checkingvisa.com',
+        '/naics/2017/v3/'
+]
+var j = document.location.host + document.location.pathname.toLowerCase(); //path
+var toExcl = false; //set to false by default
+for (var i in excl) {
+    if (j.indexOf(excl[i]) > -1) {
+        toExcl = true;
+    }
+}
+//end directory exclusions
+
+//sets the data element
+if (typeof list[h] === 'undefined' || toExcl === true) {
+    //_satellite.logger.warn("+++++SETTING JSABORT TRUE+++++");
+    //_satellite.logger.warn("+++++typeof list[h]+++++ --> " + typeof list[h]);
+    //_satellite.logger.warn("+++++toExcl+++++ --> " + toExcl);
+    _satellite.setVar('jsAbort', 'true'); //set to true
+    //_satellite.cookie.set('blackList', 'yes'); //set blackList cookie so previous values are not set on next page
+    window.blackList = 'yes';
+    //s.getPreviousValue(s.pageName, 'gpv_pt'); //prev page title
+    //_satellite.cookie.set('gpv_pt', 'blank page title');
+    //_satellite.cookie.set('gpv_pthl', 'blank theme');
+    //_satellite.cookie.set('gpv_pc', 'blank page creator');
+    //_satellite.cookie.set('gpv_pqs', 'blank query string');
+    _satellite.cookie.set('prev_page_blackList', 'yes')
+}
+else if (toExcl === false) {
+    _satellite.setVar('jsAbort', 'false');
+    window.blackList = 'no';
+}
+else {
+    _satellite.gcCustom.thisDomain = list[h];
+    //_satellite.logger.warn("+++++SETTING JSABORT FALSE+++++");
+    _satellite.setVar('jsAbort', 'false'); //set to false
+    //_satellite.cookie.set('blackList', 'no') //set blacklist cookie to no to allow previous values to be set on next page
+    window.blackList = 'no';
+
+}
+/*jsAbort END*/
+
+</script>
+<meta property="dcterms:service" content="StatCan"> 
+<meta property="dcterms:accessRights" content="2">
+</head>
+
+<body>
+<div class="page"><div class="core">	
+	<!--stopindex-->
+	<!-- FIP HEADER BEGINS | DEBUT DE L'EN-TETE PCIM --> 
+	<div class="fip"><a name="tphp" id="tphp"><img src="./Statistics_ Power from Data! Variance and standard deviation_files/sig-eng.gif" width="214" height="20" alt="Statistics Canada"></a></div>
+	<div class="cwm"><img src="./Statistics_ Power from Data! Variance and standard deviation_files/wmms.gif" width="83" height="20" alt="Symbol of the Government of Canada"></div>
+	<!-- FIP HEADER ENDS | FIN DE L'EN-TETE PCIM --> 
+	
+	<!-- INSTITUTIONAL BANNER STARTS | DEBUT DE LA BANNIERE INSTITUTIONNELLE -->
+	<div class="banner">
+		<img src="./Statistics_ Power from Data! Variance and standard deviation_files/lffl.png" class="lf pngfix" height="65" width="65" alt="">
+		<p class="main">Statistics Canada</p>
+		<p class="siteuri">www.statcan.gc.ca</p>
+	</div>
+	<!-- INSTITUTIONAL BANNER ENDS | FIN DE LA BANNIERE INSTITUTIONNELLE -->
+	
+	<!-- SKIP NAVIGATION BEGINS | DEBUT DU SAUT DE NAVIGATION -->
+	<div class="navaid">
+		<a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#cont">Skip to content</a> |
+		<a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#il">Skip to institutional links</a>
+	</div>
+	<!-- SKIP NAVIGATION ENDS | FIN DU SAUT DE NAVIGATION -->
+	
+	<!-- COMMON MENU BAR BEGINS | DEBUT DE LA BARRE DE MENU COMMUNE --> 
+	<div class="fp">
+		<!-- COMMON MENU BAR TITLE BEGINS | DEBUT DU TITRE DE LA BARRE DE MENU COMMUNE -->
+		<h1 class="navaid">Common menu bar links</h1>
+		<!-- COMMON MENU BAR TITLE ENDS | FIN DU TITRE DE LA BARRE DE MENU COMMUNE -->
+		<ul class="commonbar">
+			<!-- FRENCH LINK BEGINS | DEBUT DU LIEN FRANCAIS -->
+			<li class="fiptexta"><div>
+			<!-- LANGUAGE TOGGLE BEGINS | DEBUT DE L'INCLUSION -->
+				<a href="https://www150.statcan.gc.ca/cgi-bin/change.cgi" lang="fr" xml:lang="fr" title="Français - Version française de cette page">Français</a>
+				<!-- LANGUAGE TOGGLE ENDS | FIN DE L'INCLUSION -->
+
+			</div></li>
+			<!-- FRENCH LINK ENDS | FIN DU LIEN FRANCAIS -->
+			<li class="fiptext"><div><a href="https://www150.statcan.gc.ca/start-debut-eng.html" title="Home - The main page of Statistics Canada&#39;s website">Home</a></div></li>
+			<li class="fiptextc"><div><a href="https://www150.statcan.gc.ca/reference/refcentre-centreref/index-eng.htm" title="Contact Us - Statistics Canada contact information">Contact Us</a></div></li>
+			<li class="fiptext"><div><a href="https://www150.statcan.gc.ca/about-apercu/help-aide-eng.htm" title="Help - Information about using Statistics Canada&#39;s website">Help</a></div></li>
+			<li class="fiptext"><div><a href="https://www150.statcan.gc.ca/search-recherche/index-eng.htm" title="Search - Search Statistics Canada&#39;s website">Search</a></div></li>
+			<li class="fiptextb"><div><a href="http://www.canada.gc.ca/home.html" title="canada.gc.ca - Government of Canada website">canada.gc.ca</a></div></li>
+		</ul>
+	</div>
+	<!-- COMMON MENU BAR ENDS | FIN DE LA BARRE DE MENU COMMUNE --> 
+	<!-- HEADER ENDS | FIN DE L'EN-TETE --> 
+
+<!-- BREAD CRUMB BEGINS | DEBUT DE LA PISTE DE NAVIGATION -->
+<p class="breadcrumb"><a href="https://www150.statcan.gc.ca/start-debut-eng.html">Home</a>&nbsp;&gt; <a href="http://www5.statcan.gc.ca/researchers-chercheurs/index.action?lang=eng&amp;univ=6&amp;search=&amp;start=1&amp;end=25&amp;sort=0&amp;themeId=0&amp;date=&amp;series=&amp;author=&amp;themeState=-1&amp;dateState=-1&amp;seriesState=-1&amp;authorState=-1&amp;showAll=false?Lang=E&amp;MM">Publications</a>&nbsp;&gt; <a href="http://www5.statcan.gc.ca/bsolc/olc-cel/olc-cel?catno=12-004-x&amp;lang=eng">12-004-X</a>&nbsp;&gt; <a href="https://www150.statcan.gc.ca/edu/power-pouvoir/toc-tdm/5214718-eng.htm">Main page</a>&nbsp;&gt; <!-- InstanceBeginEditable name="Breadcrumbing | Piste de navigation" --><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214876-eng.htm">Measures of spread</a>&nbsp;&gt;<!-- InstanceEndEditable --></p>
+
+<!-- BREAD CRUMB ENDS | FIN DE LA PISTE DE NAVIGATION -->
+<div class="colLayout">
+<!-- COLUMN LAYOUT BEGINS | DEBUT DE LA MISE EN PAGE DE COLONNES -->
+<!-- LEFT SIDE MENU BEGINS | DEBUT DU MENU LATERAL GAUCHE --> 
+<div class="left">
+	<!-- SIDE MENU TITLE BEGINS | DEBUT DU TITRE DU MENU LATERAL -->
+	<h1 class="navaid"><a name="il" id="il">Site navigation menu</a></h1>
+	<!-- SIDE MENU TITLE ENDS | FIN DU TITRE DU MENU LATERAL -->
+        <div class="roundCorner roundCornerOrangeF1"> <!-- Space | Espace --></div>
+        <div class="roundCorner roundCornerOrangeF2"> <!-- Space | Espace --></div>
+        <div class="roundCorner roundCornerOrangeF3"> <!-- Space | Espace --></div>
+        <div class="roundCorner roundCornerOrangeF4"> <!-- Space | Espace --></div>
+        <div class="headerOrangeFIndex"><h2><a href="http://www5.statcan.gc.ca/researchers-chercheurs/index.action?lang=eng&amp;univ=6&amp;search=&amp;start=1&amp;end=25&amp;sort=0&amp;themeId=0&amp;date=&amp;series=&amp;author=&amp;themeState=-1&amp;dateState=-1&amp;seriesState=-1&amp;authorState=-1&amp;showAll=false?Lang=E&amp;MM">Publications</a></h2></div>
+		<ul class="nav">
+			<li>
+				<h2 class="submoddk">Statistics: Power from Data!</h2>
+			<ul class="nav">
+				<li class="menucontent"><a href="http://www.statcan.gc.ca/bsolc/olc-cel/olc-cel?catno=12-004-x&amp;lang=eng" class="menulink">12-004-X</a></li>
+               	<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/toc-tdm/5214718-eng.htm" class="menulink">Main page</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/glossary-glossaire/5214842-eng.htm" class="menulink">Glossary</a></li>
+			  <li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/bibliography-bibliographie/5214851-eng.htm" class="menulink">Bibliography</a></li>
+			</ul></li>
+<!-- InstanceBeginEditable name="Menu 2b" -->
+	<li><h2 class="nav">Measures of spread</h2>
+	<ul class="nav">
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/5214876-eng.htm" class="menulink">Welcome page</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/5214890-eng.htm" class="menulink">Range and quartiles</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/5214891-eng.htm" class="menulink">Variance and standard deviation</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/5214877-eng.htm" class="menulink">Five-number summaries</a></li>
+
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/5214889-eng.htm" class="menulink">Constructing box and whisker plots</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/exer/5214875-eng.htm" class="menulink">Exercises</a></li>
+				<li class="menucontent"><a href="https://www150.statcan.gc.ca/edu/power-pouvoir/ch12/answers-reponses/5214874-eng.htm" class="menulink">Answers</a></li>
+	</ul>
+</li>
+
+				
+
+<!-- InstanceEndEditable -->
+	</ul>
+ </div>
+<!-- LEFT SIDE MENU ENDS | FIN DU MENU LATERAL À GAUCHE -->
+
+<!--startindex-->
+<!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+	<div class="center">
+		<p class="navaid"><a name="cont" id="cont">Page content follows</a></p>
+        <!--startindex-->
+        <div class="tc">
+
+<!-- InstanceBeginEditable name="Content of page" -->
+<h1>Variance and standard deviation</h1>
+<!--ARCHIVED NOTICE BEGINS-->          
+    <div id="archived">
+    <h2>Archived Content</h2>
+    <p>Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please <a href="http://www.statcan.gc.ca/reference/refcentre-centreref/index-eng.htm">contact us</a> to request a format other than those available.</p>
+</div>
+
+<!--ARCHIVED NOTICE ENDS-->
+<ul>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a1">Properties of standard deviation</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a2">Discrete variables</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a3">Example 1 – Standard deviation</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a4">Frequency table (discrete variables)</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a5">Example 2 – Standard deviation calculated using a frequency table</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a6">Example 3 – Standard deviation using grouped variables (continuous or discrete)</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a7">Example 4 – Standard deviation</a></li>
+  <li><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#a8">Example 5 – Standard deviation</a></li>
+</ul>
+<p>Unlike range and quartiles, the variance combines all the values in a data set to produce a measure of spread. The variance (symbolized by <strong>S<sup>2</sup></strong>) and standard deviation (the square root of the variance, symbolized by <strong>S</strong>) are the most commonly used measures of spread.</p>
+<p>We know that variance is a measure of how spread out a data set is. It is calculated as the average squared deviation of each number from the mean of a data set. For example, for the numbers 1, 2, and 3 the mean is 2 and the variance is 0.667.</p>
+<p>[(1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>] ÷ 3 = 0.667</p>
+<p>[squaring deviation from the mean] ÷ number of observations = variance</p>
+<p><strong>Variance (S<sup>2</sup>) = average squared deviation of values from mean</strong></p>
+<p>Calculating variance involves squaring deviations, so it does not have the same unit of measurement as the original observations. For example, lengths measured in metres (m) have a variance measured in metres squared (m<sup>2</sup>).</p>
+<p>Taking the square root of the variance gives us the units used in the original scale and this is the standard deviation.</p>
+<p><strong>Standard deviation (S) = square root of the variance</strong></p>
+<p>Standard deviation is the measure of spread most commonly used in statistical practice when the mean is used to calculate central tendency. Thus, it measures spread around the mean. Because of its close links with the mean, standard deviation can be greatly affected if the mean gives a poor measure of central tendency.</p>
+<p>Standard deviation is also influenced by outliers one value could contribute largely to the results of the standard deviation. In that sense, the standard deviation is a good indicator of the presence of outliers. This makes standard deviation a very useful measure of spread for symmetrical distributions with no outliers.</p>
+<p>Standard deviation is also useful when comparing the spread of two separate data sets that have approximately the same mean. The data set with the smaller standard deviation has a narrower spread of measurements around the mean and therefore usually has comparatively fewer high or low values. An item selected at random from a data set whose standard deviation is low has a better chance of being close to the mean than an item from a data set whose standard deviation is higher.</p>
+<p>Generally, the more widely spread the values are, the larger the standard deviation is. For example, imagine that we have to separate two different sets of exam results from a class of 30&nbsp;students the first exam has marks ranging from 31% to 98%, the other ranges from 82% to 93%. Given these ranges, the standard deviation would be larger for the results of the first exam.</p>
+<p>Standard deviation might be difficult to interpret in terms of how big it has to be in order to consider the data widely spread. The size of the mean value of the data set depends on the size of the standard deviation. When you are measuring something that is in the millions, having measures that are "close" to the mean value does not have the same meaning as when you are measuring the weight of two individuals. For example, a measure of two large companies with a difference of $10,000 in annual revenues is considered pretty close, while the measure of two individuals with a weight difference of 30&nbsp;kilograms is considered far apart. This is why, in most situations, it is useful to assess the size of the standard deviation relative to the mean of the data set.</p>
+<p>Although standard deviation is less susceptible to extreme values than the <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/glossary-glossaire/5214842-eng.htm#range">range</a>, standard deviation is still more sensitive than the <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/glossary-glossaire/5214842-eng.htm#semiquartile">semi-quartile range</a>. If the possibility of high values (outliers) presents itself, then the standard deviation should be supplemented by the semi-quartile range.</p>
+<h2><a name="a1" id="a1">Properties of standard deviation</a></h2>
+<p>When using standard deviation keep in mind the following properties.</p>
+<ul>
+  <li>Standard deviation is only used to measure spread or dispersion around the mean of a data set.</li>
+  <li>Standard deviation is never negative.</li>
+  <li>Standard deviation is sensitive to outliers. A single outlier can raise the standard deviation and in turn, distort the picture of spread.</li>
+  <li>For data with approximately the same mean, the greater the spread, the greater the standard deviation.</li>
+  <li>If all values of a data set are the same, the standard deviation is zero (because each value is equal to the mean).</li>
+</ul>
+<p>When analysing normally distributed data, standard deviation can be used in conjunction with the mean in order to calculate data intervals.</p>
+<p>If <img height="10" alt="x bar" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> = mean, <strong>S</strong> = standard deviation and <strong>x</strong> = a value in the data set, then</p>
+<ul>
+  <li>about 68% of the data lie in the interval: <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> <strong>- S &lt; x &lt; <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> + S</strong>.</li>
+  <li>about 95% of the data lie in the interval: <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> <strong>- 2S &lt; x &lt;</strong><img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> <strong>+ 2S</strong>.</li>
+  <li>about 99% of the data lie in the interval: <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> <strong>- 3S &lt; x &lt;</strong> <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> <strong>+ 3S</strong>.</li>
+</ul>
+<h2><a name="a2" id="a2">Discrete variables</a></h2>
+<p>The variance for a discrete variable made up of <strong>n</strong> observations is defined as:</p>
+<p><img height="35" title="Equation for the variance of a discrete variable" alt="Equation for the variance of a discrete variable." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_02.gif" width="100" longdesc="img/desc/5214891_02-eng.htm"></p>
+<p><a name="a2a" id="a2a">The standard deviation</a> for a discrete variable made up of <strong>n</strong> observations is the positive square root of the variance and is defined as:</p>
+<p><img height="45" title="Equation for the standard deviation of a discrete variable" alt="Equation for the standard deviation of a discrete variable." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_03.gif" width="125" longdesc="img/desc/5214891_03-eng.htm"></p>
+<p>Use this step-by-step approach to find the standard deviation for a discrete variable.</p>
+<ol>
+  <li>Calculate the mean.</li>
+  <li>Subtract the mean from each observation.</li>
+  <li>Square each of the resulting observations.</li>
+  <li>Add these squared results together.</li>
+  <li>Divide this total by the number of observations (variance, <strong>S<sup>2</sup>)</strong>.</li>
+  <li>Use the positive square root (standard deviation, <strong>S</strong>).</li>
+</ol>
+<h2><a name="a3" id="a3">Example 1 – Standard deviation</a></h2>
+<p>A hen lays eight eggs. Each egg was weighed and recorded as follows:</p>
+<p>60 g, 56 g, 61 g, 68 g, 51 g, 53 g, 69 g, 54 g.</p>
+<ol class="alpha">
+  <li class="li-padding"><a name="a3a" id="a3a">First, calculate the mean:</a><br>
+    <img height="99" title="Calculation of the mean for example 1 a" alt="Calculation of the mean for example 1 a." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_04.gif" width="76" longdesc="img/desc/5214891_04-eng.htm"></li>
+  <li>Now, find the standard deviation.<br>
+<br>
+<table class="lr-table-data-45" summary="The table displays the weight of eggs.">
+  <caption class="lr-tbl-title">
+  Table 1.&nbsp;&nbsp;Weight of eggs, in grams
+  </caption>
+  <tbody><tr>
+    <th class="lr-tbl-header-l" id="h_00">Weight (x)</th>
+    <th class="lr-tbl-header-r" id="h_01">(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)</th>
+    <th class="lr-tbl-header-r" id="h_02">(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup></th>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_01" headers="h_00">60</th>
+    <td class="lr-tbl-data" headers="stub_01 h_01">1</td>
+    <td class="lr-tbl-data" headers="stub_01 h_02">1</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_02" headers="h_00">56</th>
+    <td class="lr-tbl-data" headers="stub_02 h_01">-3</td>
+    <td class="lr-tbl-data" headers="stub_02 h_02">9</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_03" headers="h_00">61</th>
+    <td class="lr-tbl-data" headers="stub_03 h_01">2</td>
+    <td class="lr-tbl-data" headers="stub_03 h_02">4</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_04" headers="h_00">68</th>
+    <td class="lr-tbl-data" headers="stub_04 h_01">9</td>
+    <td class="lr-tbl-data" headers="stub_04 h_02">81</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_05" headers="h_00">51</th>
+    <td class="lr-tbl-data" headers="stub_05 h_01">-8</td>
+    <td class="lr-tbl-data" headers="stub_05 h_02">64</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_06" headers="h_00">53</th>
+    <td class="lr-tbl-data" headers="stub_06 h_01">-6</td>
+    <td class="lr-tbl-data" headers="stub_06 h_02">36</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_07" headers="h_00">69</th>
+    <td class="lr-tbl-data" headers="stub_07 h_01">10</td>
+    <td class="lr-tbl-data" headers="stub_07 h_02">100</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_08" headers="h_00">54</th>
+    <td class="lr-tbl-data" headers="stub_08 h_01">-5</td>
+    <td class="lr-tbl-data" headers="stub_08 h_02">25</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1b-bb" id="stub_09" headers="h_00">472</th>
+    <td class="lr-tbl-datab-bb" headers="stub_09 h_01">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_09 h_02">320</td>
+  </tr>
+</tbody></table>
+<br>
+<a name="link05" id="link05">Using the information from the above table, we can see that</a><br>
+<br>
+<img height="22" title="The sum of each observation minus the mean, squared equals 320." alt="The sum of each observation minus the mean, squared equals 320" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_05.gif" longdesc="img/desc/5214891_05-eng.htm" width="100"><br>
+<br>
+<a name="a3b" id="a3b">In order to calculate the standard deviation, we must use the following formula:</a><br>
+<br>
+  <img height="124" title="Calculating the standard deviation for example 1 b" alt="Calculating the standard deviation for example 1 b." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_06-eng.gif" width="128" longdesc="img/desc/5214891_06-eng.htm"></li>
+</ol>
+<h2><a name="a4" id="a4">Frequency table (discrete variables)</a></h2>
+<p>The formulas for variance and standard deviation change slightly if observations are grouped into a frequency table. Squared deviations are multiplied by each frequency's value, and then the total of these results is calculated.</p>
+<p><a name="a4a" id="a4a">In a</a> <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/glossary-glossaire/5214842-eng.htm#freqtable">frequency table</a>, the variance for a discrete variable is defined as</p>
+<p><img src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_07-eng.gif" title="Equation for variance of a discrete variable in a frequency table" alt="Equation for variance of a discrete variable in a frequency table." width="249" height="51" longdesc="img/desc/5214891_07-eng.htm"></p>
+<p><a name="a4b" id="a4b">The standard deviation for a discrete variable is defined as</a></p>
+<p><img height="52" title="Equation for standard deviation of a discrete variable in a frequency table" alt="Equation for standard deviation of a discrete variable in a frequency table." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_08.gif" width="116" longdesc="img/desc/5214891_08-eng.htm"></p>
+<h2><a name="a5" id="a5">Example 2 – Standard deviation calculated using a frequency table</a></h2>
+<p>Thirty farmers were asked how many farm workers they hire during a typical harvest season. Their responses were:</p>
+<p>4, 5, 6, 5, 3, 2, 8, 0, 4, 6, 7, 8, 4, 5, 7, 9, 8, 6, 7, 5, 5, 4, 2, 1, 9, 3, 3, 4, 6, 4</p>
+<table class="lr-table-data" summary="The table displays the number of farm workers hired in a typical harvest season, according to 30 farmers surveyed.">
+  <caption class="lr-tbl-title">
+  Table 2.&nbsp;&nbsp;Thirty farmers were asked how many farm workers they hire during a typical harvest season. Their responses were:
+  </caption>
+  <tbody><tr>
+    <th class="lr-tbl-header-l" id="h_03">Workers (x)</th>
+    <th class="lr-tbl-header-r" id="h_04">Tally</th>
+    <th class="lr-tbl-header-r" id="h_05">Frequency (f)</th>
+    <th class="lr-tbl-header-r" id="h_06">(xf)</th>
+    <th class="lr-tbl-header-r" id="h_07">(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)</th>
+    <th class="lr-tbl-header-r" id="h_08">(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup></th>
+    <th class="lr-tbl-header-r" id="h_09">(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup>f</th>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_10" headers="h_03">0</th>
+    <td class="lr-tbl-data-l" headers="stub_10 h_04"><img src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_01.gif" alt="1" width="4" height="11"></td>
+    <td class="lr-tbl-data" headers="stub_10 h_05">1</td>
+    <td class="lr-tbl-data" headers="stub_10 h_06">0</td>
+    <td class="lr-tbl-data" headers="stub_10 h_07">-5</td>
+    <td class="lr-tbl-data" headers="stub_10 h_08">25</td>
+    <td class="lr-tbl-data" headers="stub_10 h_09">25</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_11" headers="h_03">1</th>
+    <td class="lr-tbl-data-l" headers="stub_11 h_04"><img src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_01.gif" alt="1" width="4" height="11"></td>
+    <td class="lr-tbl-data" headers="stub_11 h_05">1</td>
+    <td class="lr-tbl-data" headers="stub_11 h_06">1</td>
+    <td class="lr-tbl-data" headers="stub_11 h_07">-4</td>
+    <td class="lr-tbl-data" headers="stub_11 h_08">16</td>
+    <td class="lr-tbl-data" headers="stub_11 h_09">16</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_12" headers="h_03">2</th>
+    <td class="lr-tbl-data-l" headers="stub_12 h_04"><img height="9" alt="2" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_02.gif" width="5"></td>
+    <td class="lr-tbl-data" headers="stub_12 h_05">2</td>
+    <td class="lr-tbl-data" headers="stub_12 h_06">4</td>
+    <td class="lr-tbl-data" headers="stub_12 h_07">-3</td>
+    <td class="lr-tbl-data" headers="stub_12 h_08">9</td>
+    <td class="lr-tbl-data" headers="stub_12 h_09">18</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_13" headers="h_03">3</th>
+    <td class="lr-tbl-data-l" headers="stub_13 h_04"><img height="9" alt="3" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_03.gif" width="8"></td>
+    <td class="lr-tbl-data" headers="stub_13 h_05">3</td>
+    <td class="lr-tbl-data" headers="stub_13 h_06">9</td>
+    <td class="lr-tbl-data" headers="stub_13 h_07">-2</td>
+    <td class="lr-tbl-data" headers="stub_13 h_08">4</td>
+    <td class="lr-tbl-data" headers="stub_13 h_09">12</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_14" headers="h_03">4</th>
+    <td class="lr-tbl-data-l" headers="stub_14 h_04"><img height="9" alt="6" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_06.gif" width="23"></td>
+    <td class="lr-tbl-data" headers="stub_14 h_05">6</td>
+    <td class="lr-tbl-data" headers="stub_14 h_06">24</td>
+    <td class="lr-tbl-data" headers="stub_14 h_07">-1</td>
+    <td class="lr-tbl-data" headers="stub_14 h_08">1</td>
+    <td class="lr-tbl-data" headers="stub_14 h_09">6</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_15" headers="h_03">5</th>
+    <td class="lr-tbl-data-l" headers="stub_15 h_04"><img height="9" alt="5" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_05.gif" width="18"></td>
+    <td class="lr-tbl-data" headers="stub_15 h_05">5</td>
+    <td class="lr-tbl-data" headers="stub_15 h_06">25</td>
+    <td class="lr-tbl-data" headers="stub_15 h_07">0</td>
+    <td class="lr-tbl-data" headers="stub_15 h_08">0</td>
+    <td class="lr-tbl-data" headers="stub_15 h_09">0</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_16" headers="h_03">6</th>
+    <td class="lr-tbl-data-l" headers="stub_16 h_04"><img height="9" alt="4" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_04.gif" width="11"></td>
+    <td class="lr-tbl-data" headers="stub_16 h_05">4</td>
+    <td class="lr-tbl-data" headers="stub_16 h_06">24</td>
+    <td class="lr-tbl-data" headers="stub_16 h_07">1</td>
+    <td class="lr-tbl-data" headers="stub_16 h_08">1</td>
+    <td class="lr-tbl-data" headers="stub_16 h_09">4</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_17" headers="h_03">7</th>
+    <td class="lr-tbl-data-l" headers="stub_17 h_04"><img height="9" alt="3" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_03.gif" width="8"></td>
+    <td class="lr-tbl-data" headers="stub_17 h_05">3</td>
+    <td class="lr-tbl-data" headers="stub_17 h_06">21</td>
+    <td class="lr-tbl-data" headers="stub_17 h_07">2</td>
+    <td class="lr-tbl-data" headers="stub_17 h_08">4</td>
+    <td class="lr-tbl-data" headers="stub_17 h_09">12</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_18" headers="h_03">8</th>
+    <td class="lr-tbl-data-l" headers="stub_18 h_04"><img height="9" alt="3" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_03.gif" width="8"></td>
+    <td class="lr-tbl-data" headers="stub_18 h_05">3</td>
+    <td class="lr-tbl-data" headers="stub_18 h_06">24</td>
+    <td class="lr-tbl-data" headers="stub_18 h_07">3</td>
+    <td class="lr-tbl-data" headers="stub_18 h_08">9</td>
+    <td class="lr-tbl-data" headers="stub_18 h_09">27</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_19" headers="h_03">9</th>
+    <td class="lr-tbl-data-l" headers="stub_19 h_04"><img height="9" alt="2" src="./Statistics_ Power from Data! Variance and standard deviation_files/tick_02.gif" width="5"></td>
+    <td class="lr-tbl-data" headers="stub_19 h_05">2</td>
+    <td class="lr-tbl-data" headers="stub_19 h_06">18</td>
+    <td class="lr-tbl-data" headers="stub_19 h_07">4</td>
+    <td class="lr-tbl-data" headers="stub_19 h_08">16</td>
+    <td class="lr-tbl-data" headers="stub_19 h_09">32</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1b-bb" id="stub_20" headers="h_03">&nbsp;</th>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_04">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_05">30</td>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_06">150</td>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_07">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_08">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_20 h_09">152</td>
+  </tr>
+</tbody></table>
+<p><a name="a5a" id="a5a">To calculate the mean:</a></p>
+<p><img height="99" title="Mean equals the sum of the data values times their frequency divided by the sum of the frequencies" alt="Mean equals the sum of the data values times their frequency divided by the sum of the frequencies." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_09.gif" width="76" longdesc="img/desc/5214891_09-eng.htm"></p>
+<p><a name="a5b" id="a5b">To calculate the standard deviation:</a></p>
+<p><img height="128" title="Calculation of standard deviation for example 2" alt="Calculation of standard deviation for example 2." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_10-eng.gif" width="158" longdesc="img/desc/5214891_10-eng.htm"></p>
+<h2><a name="a6" id="a6">Example 3 – Standard deviation using grouped variables (continuous or discrete)</a></h2>
+<p>220 students  were asked the n<span class="lr-tbl-title">umber of hours per week they spent watching television</span>. With this information, calculate the mean and standard deviation of hours spent watching television by the 220 students.</p>
+<table class="lr-table-data-45" summary="The table displays the number of hours per week spent watching television by a group of 220 students.">
+  <caption class="lr-tbl-title">
+  Table 3.&nbsp;&nbsp;Number of hours per week spent watching television
+  </caption>
+  <tbody><tr>
+    <th class="lr-tbl-header-l" scope="col">Hours</th>
+    <th class="lr-tbl-header-r" scope="col">Number of students</th>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">10&nbsp;to&nbsp;14</th>
+    <td class="lr-tbl-data">2</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">15&nbsp;to&nbsp;19</th>
+    <td class="lr-tbl-data">12</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">20&nbsp;to&nbsp;24</th>
+    <td class="lr-tbl-data">23</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">25&nbsp;to&nbsp;29</th>
+    <td class="lr-tbl-data">60</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">30&nbsp;to&nbsp;34</th>
+    <td class="lr-tbl-data">77</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" scope="row">35&nbsp;to&nbsp;39</th>
+    <td class="lr-tbl-data">38</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1-bb" scope="row">40&nbsp;to&nbsp;44</th>
+    <td class="lr-tbl-data-bb">8</td>
+  </tr>
+</tbody></table>
+<ol class="alpha">
+  <li>First, using the number of students as the frequency, find the midpoint of time intervals.</li>
+  <li>Now calculate the mean using the midpoint (<strong>x</strong>) and the frequency (<strong>f</strong>).</li>
+</ol>
+<p><strong>Note</strong>: In this example, you are using a continuous variable that has been rounded to the nearest integer. The group of <strong>10&nbsp;to&nbsp;14</strong> is actually 9.5 to 14.499 (as the 9.5 would be rounded up to 10 and the 14.499 would be rounded down to 14). <a name="a6a" id="a6a">The interval has a length of 5 but the midpoint is <span class="nobr">12 (9.5 + 2.5 = 12).</span></a></p>
+<p><img height="99" title="Calculation of the mean for example 3" alt="Calculation of the mean for example 3." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_11-eng.gif" width="76" longdesc="img/desc/5214891_11-eng.htm"></p>
+<p>6,560 = (2 X 12 + 12 X 17 + 23 X 22 + 60 X 27 + 77 X 32 + 38 X 37 + 8 X 42)</p>
+<p>Then, calculate the numbers for the <strong>xf</strong>, <strong>(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)</strong>, <strong>(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup></strong> and <strong>(x - <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup>f</strong> formulas.</p>
+<p>Add them to the frequency table below.</p>
+<table class="lr-table-data" summary="The table displays the number of hours per week spent watching television by a group of 220 students, displayed in a frequency table.">
+  <caption class="lr-tbl-title">
+  Table 4.&nbsp;&nbsp;Number of hours spent watching television
+  </caption>
+  <tbody><tr>
+    <th class="lr-tbl-header-l" id="h_10">Hours</th>
+    <th class="lr-tbl-header-r" id="h_11">Midpoint (x)</th>
+    <th class="lr-tbl-header-r" id="h_12">Frequency (f)</th>
+    <th class="lr-tbl-header-r" id="h_13">xf</th>
+    <th class="lr-tbl-header-r" id="h_14">(x - <img height="10" alt="la moyenne" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)</th>
+    <th class="lr-tbl-header-r" id="h_15">(x - <img height="10" alt="la moyenne" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup></th>
+    <th class="lr-tbl-header-r" id="h_16">(x - <img height="10" alt="la moyenne" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8">)<sup>2</sup>f</th>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_21" headers="h_10">10&nbsp;to&nbsp;14</th>
+    <td class="lr-tbl-data" headers="stub_21 h_11">12</td>
+    <td class="lr-tbl-data" headers="stub_21 h_12">2</td>
+    <td class="lr-tbl-data" headers="stub_21 h_13">24</td>
+    <td class="lr-tbl-data" headers="stub_21 h_14">-17.82</td>
+    <td class="lr-tbl-data" headers="stub_21 h_15">317.6</td>
+    <td class="lr-tbl-data" headers="stub_21 h_16">635.2</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_22" headers="h_10">15&nbsp;to&nbsp;19</th>
+    <td class="lr-tbl-data" headers="stub_22 h_11">17</td>
+    <td class="lr-tbl-data" headers="stub_22 h_12">12</td>
+    <td class="lr-tbl-data" headers="stub_22 h_13">204</td>
+    <td class="lr-tbl-data" headers="stub_22 h_14">-12.82</td>
+    <td class="lr-tbl-data" headers="stub_22 h_15">164.4</td>
+    <td class="lr-tbl-data" headers="stub_22 h_16">1,972.8</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_23" headers="h_10">20&nbsp;to&nbsp;24</th>
+    <td class="lr-tbl-data" headers="stub_23 h_11">22</td>
+    <td class="lr-tbl-data" headers="stub_23 h_12">23</td>
+    <td class="lr-tbl-data" headers="stub_23 h_13">506</td>
+    <td class="lr-tbl-data" headers="stub_23 h_14">-7.82</td>
+    <td class="lr-tbl-data" headers="stub_23 h_15">61.2</td>
+    <td class="lr-tbl-data" headers="stub_23 h_16">1,407.6</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_24" headers="h_10">25&nbsp;to&nbsp;29</th>
+    <td class="lr-tbl-data" headers="stub_24 h_11">27</td>
+    <td class="lr-tbl-data" headers="stub_24 h_12">60</td>
+    <td class="lr-tbl-data" headers="stub_24 h_13">1,620</td>
+    <td class="lr-tbl-data" headers="stub_24 h_14">-2.82</td>
+    <td class="lr-tbl-data" headers="stub_24 h_15">8.0</td>
+    <td class="lr-tbl-data" headers="stub_24 h_16">480.0</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_25" headers="h_10">30&nbsp;to&nbsp;34</th>
+    <td class="lr-tbl-data" headers="stub_25 h_11">32</td>
+    <td class="lr-tbl-data" headers="stub_25 h_12">77</td>
+    <td class="lr-tbl-data" headers="stub_25 h_13">2,464</td>
+    <td class="lr-tbl-data" headers="stub_25 h_14">2.18</td>
+    <td class="lr-tbl-data" headers="stub_25 h_15">4.8</td>
+    <td class="lr-tbl-data" headers="stub_25 h_16">369.6</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_26" headers="h_10">35&nbsp;to&nbsp;39</th>
+    <td class="lr-tbl-data" headers="stub_26 h_11">37</td>
+    <td class="lr-tbl-data" headers="stub_26 h_12">38</td>
+    <td class="lr-tbl-data" headers="stub_26 h_13">1,406</td>
+    <td class="lr-tbl-data" headers="stub_26 h_14">7.18</td>
+    <td class="lr-tbl-data" headers="stub_26 h_15">51.6</td>
+    <td class="lr-tbl-data" headers="stub_26 h_16">1,960.8</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1" id="stub_27" headers="h_10">40&nbsp;to&nbsp;44</th>
+    <td class="lr-tbl-data" headers="stub_27 h_11">42</td>
+    <td class="lr-tbl-data" headers="stub_27 h_12">8</td>
+    <td class="lr-tbl-data" headers="stub_27 h_13">336</td>
+    <td class="lr-tbl-data" headers="stub_27 h_14">12.18</td>
+    <td class="lr-tbl-data" headers="stub_27 h_15">148.4</td>
+    <td class="lr-tbl-data" headers="stub_27 h_16">1,187.2</td>
+  </tr>
+  <tr class="lr">
+    <th class="lr-tbl-r1b-bb" id="stub_28" headers="h_10">&nbsp;</th>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_11">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_12">220</td>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_13">6,560</td>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_14">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_15">&nbsp;</td>
+    <td class="lr-tbl-datab-bb" headers="stub_28 h_16">&nbsp;8,013.2</td>
+  </tr>
+</tbody></table>
+<h2><a name="a7" id="a7">Example 4 – Standard deviation</a></h2>
+<p>Use the information found in the table above to find the standard deviation.</p>
+<p><img height="148" title="Calculation of the standard deviation using data from Table 4" alt="Calculation of the standard deviation using data from Table 4." src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_12-eng.gif" width="158" longdesc="img/desc/5214891_12-eng.htm"></p>
+<p><strong>Note:</strong> During calculations, when a variable is grouped by class intervals, the midpoint of the interval is used in place of every other value in the interval. Thus, the spread of observations within each interval is ignored. This makes the standard deviation <em>always</em> less than the true value. It should, therefore, be regarded as an approximation.</p>
+<h2><a name="a8" id="a8">Example 5 – Standard deviation</a></h2>
+<p>Assuming the frequency distribution is approximately normal, calculate the interval within which 95% of the previous example's observations would be expected to occur.</p>
+<p><img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> = 29.82, <strong>s</strong> = 6.03</p>
+<p>Calculate the interval using the following formula: <span class="nobr"><img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> - <strong>2s</strong> &lt; <strong>x</strong> &lt; <img height="10" alt="mean" src="./Statistics_ Power from Data! Variance and standard deviation_files/5214891_01.gif" width="8"> + <strong>2s</strong></span></p>
+<p>29.82 - (2 X 6.03) &lt; <strong>x</strong> &lt; 29.82 + (2 X 6.03)</p>
+<p>29.82 - 12.06 &lt; <strong>x</strong> &lt; 29.82 + 12.06</p>
+<p><strong>17.76 &lt; x &lt; 41.88</strong></p>
+<p>This means that there is about a 95% certainty that a student will spend between 18&nbsp;hours and 42&nbsp;hours per&nbsp;week watching television.</p>
+<!-- InstanceEndEditable -->
+
+	</div>
+    
+	<!-- START OF SmartSource Data Collector TAG -->
+    <!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+    <!-- Version: 8.6.2 -->
+    <!-- Tag Builder Version: 3.0  -->
+    <!-- Created: 12/1/2009 3:27:29 PM -->
+    <script src="./Statistics_ Power from Data! Variance and standard deviation_files/webtrends.js.download" type="text/javascript"></script>
+    
+    <!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+    <!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+    
+    <script type="text/javascript">
+    //<![CDATA[
+    var _tag=new WebTrends();
+    _tag.dcsGetId();
+    //]]>>
+    </script><script type="text/javascript" src="https://www32.statcan.gc.ca/dcsrufaen10000go5lgkpmws3_7s8n/wtid.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    // Add custom parameters here.
+    //_tag.DCSext.param_name=param_value;
+    _tag.dcsCollect();
+    //]]>>
+    </script>
+    <noscript>
+    <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://www32.statcan.gc.ca/dcsrufaen10000go5lgkpmws3_7s8n/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2" /></div>
+    </noscript>
+    
+    </div>
+	<!-- CONTENT ENDS | FIN DU CONTENU -->
+
+	<!-- FOOTER BEGINS | DEBUT DU PIED DE LA PAGE --> 
+	<div class="footer">
+		<div class="footerline"></div>		
+		<div class="foot1">
+		<!-- DATE MODIFIED BEGINS | DEBUT DE LA DATE DE MODIFICATION -->
+		Date Modified: <span class="date">
+<!-- DATE MODIFIED -->
+2021-03-31
+<!-- END DATE MODIFIED -->
+		</span>
+		<!-- DATE MODIFIED ENDS | FIN DE LA DATE DE MODIFICATION -->
+        <!--stopindex-->
+		</div>
+		<div class="foot2"><a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#tphp" title="Return to Top of Page"><img class="uparrow" src="./Statistics_ Power from Data! Variance and standard deviation_files/tphp.gif" width="19" height="12" alt=""><br>Top of Page</a></div>
+		<div class="foot3"><a href="https://www150.statcan.gc.ca/reference/important-notices-avis-eng.htm" title="Important Notices">Important Notices</a></div>
+	</div>
+	<!-- FOOTER ENDS | FIN DU PIED DE LA PAGE -->
+    <!--startindex-->
+	</div>
+</div></div><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_canada_0" name="destination_publishing_iframe_canada_0_name" src="./Statistics_ Power from Data! Variance and standard deviation_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe>
+<script type="text/javascript">_satellite.pageBottom();</script><script>
+_satellite.track('pageReset');
+</script>
+
+<!-- InstanceEnd --><span id="text-resize" style="position: absolute; left: -9999px; bottom: 0; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div class="archived" role="toolbar" aria-hidden="false" style="display: block;"><a class="archived-top-page" href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm#tphp" role="link">This Web page has been archived on the Web.</a></div></body></html>

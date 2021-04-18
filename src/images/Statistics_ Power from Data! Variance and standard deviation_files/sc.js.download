@@ -1,0 +1,4 @@
+function openit(sURL)
+{
+	newwindow=open(sURL,"","scrollbars=yes,toolbar=yes,directories=no,menubar=yes,resizable=yes,status=no,width=680,height=600");
+}
