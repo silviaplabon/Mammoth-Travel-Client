@@ -9,7 +9,7 @@ const ServiceDetail = (props) => {
     const state=props.state;
     const history=useHistory();
     const handleService=(id)=>{
-      history.push(`/service/${id}`)
+      history.push(`/user/service/${id}`)
     }
     const handleDelete = (id) => {
           fetch(`http://localhost:4200/delete/${id}`, {
@@ -18,13 +18,13 @@ const ServiceDetail = (props) => {
               .then(res => res.json())
               .then(res => {
                   if (res) {
-                    // history.push('/manageService') 
+                    
                   }
               })
   }
     return (
         <div  className="col mt-4">
-        <div  className="card h-100 " onClick={()=>handleService(_id)}>
+        <div  className="card h-100 ">
           <img src={imageURL}  className="img-fluid h-75" alt="..."/>
           <div  className="card-body h-25">
             <h5  className="card-title text-center">{name}</h5>
@@ -33,7 +33,9 @@ const ServiceDetail = (props) => {
           <div  className="card-footer d-flex justify-content-between">
             <small  className="text-muted">${price}</small>
             {
-               state==true && <FontAwesomeIcon icon={faTrash} className="text-danger cursorIcon" style={{fontSize:'30px'}} onClick={() => handleDelete(_id)} />
+               state==true ?
+                <FontAwesomeIcon icon={faTrash} className="text-danger cursorIcon" style={{fontSize:'30px'}} onClick={() => handleDelete(_id)} />
+                :<button className="btn btn-primary"  onClick={()=>handleService(_id)} >Book</button>
             }
 
           </div>

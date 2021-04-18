@@ -40,9 +40,10 @@ const AddService = () => {
         });
     }
     return (
-      <div className="container row m-auto ">
+      <div className="container ">
+        <div className="row">
 
-      <div className="col-md-4  pb-5 bg-warning">
+      <div className="col-md-4  pb-5">
             <AdminSidebar></AdminSidebar>
       </div>
       <div className="col-md-8">
@@ -66,6 +67,7 @@ const AddService = () => {
             <input type="submit" className="mt-3 btn btn-primary" value="Save" />
           </div>
         </form>
+        </div>
         </div>
          </div>
     );

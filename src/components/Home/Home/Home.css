@@ -1,12 +1,6 @@
 .headerContainer {
     height:600px;
     position:relative;
-    /* background-image: url('../../../images/hdtravel.jpg'); */
-    /* background-size: 70% 100%; */
-    /* top:0;
-    left:0;
-    z-index:-10;
-    width:70%; */
 }
 .headerContainer::after {
     height:700px;

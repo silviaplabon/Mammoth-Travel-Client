@@ -47,9 +47,9 @@ const Navbar = () => {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <Link to="/" className="nav-link">Home</Link>
-                <Link to="/orders" className=" nav-link">Orders</Link>
+                <Link to="/user/bookingList" className=" nav-link">Orders</Link>
+
                 <Link to="/admin" className="nav-link">Admin</Link>
-                <Link to="/" className="nav-link">Deals</Link>
                 {loggedInUser.email && (loggedInUser.displayName ? <button className="btn buttonColor me-2  buttonStyleHeader">{loggedInUser.displayName}</button>
                   : <button className="btn  me-2  buttonStyle buttonColor">{loggedInUser.email}</button>)}
   

@@ -20,7 +20,6 @@
 
 @media only screen and (min-device-width: 200px) and (max-device-width:767px) {
     .sidebar{
-        height:30vh!important;
-        padding-bottom:3vh!important;
+        height:25vh!important;
     }
 }

@@ -26,18 +26,19 @@ const BookingList = () => {
     }, [loggedInUser.email])
      console.log(bookings)
     return (
-        <div className="container row m-auto ">
-            <Navbar></Navbar>
-            <div className="col-md-4 navbarAddProduct pb-5 bg-warning mt-5">
+        <div className="container">
+        <div className="row">
+            <div className="col-md-4 pb-5 mt-2">
                 <UserSidebar></UserSidebar>
             </div>
-            <div className="col-md-8 mt-5">
-                <div className="row row-cols-1 row-cols-md-2">
+            <div className="col-md-7 mt-5">
+                <div className="row">
                 {
                     bookings.map(booking=><BookingDetail booking={booking}></BookingDetail>)
                 }
                  </div>
             </div>
+        </div>
         </div>
     );
 };

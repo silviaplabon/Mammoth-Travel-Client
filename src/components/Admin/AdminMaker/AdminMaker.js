@@ -22,20 +22,23 @@ const AdminMaker = () => {
   
     
     return (
-        <div className="container row m-auto">
+        <div className="container ">
+          <div className="row">
 
-        <div className="col-md-4 navbarAddProduct pb-5 bg-warning">
+         
+        <div className="col-md-4  pb-5">
               <AdminSidebar></AdminSidebar>
         </div>
         <div className="col-md-8">
-
-        <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-4 formStyle">
+        <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-2 formStyle">
             <label for="servicename">Email</label>
             <input name="email" type="email" id="servicename" className="form-control " defaultValue="" ref={register} />
           <input type="submit" className="mt-3 btn btn-primary" value="Save" />
       </form>
       </div>
+      </div> 
       </div>
+
     );
 };
 

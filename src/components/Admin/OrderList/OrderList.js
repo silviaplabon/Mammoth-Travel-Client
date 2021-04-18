@@ -12,20 +12,20 @@ const OrderList = () => {
     console.log(bookings);
     return (
         <div className="container">
-        <div className="row ">
-            <div className="col-md-4  col-sm-12 pb-5 bg-warning">
+        <div className="row rowOrder">
+            <div className="col-md-4  col-sm-12 pb-5">
                 <AdminSidebar></AdminSidebar>
             </div>
-            <div className="col-md-8 col-sm-12">
+            <div className="col-md-8 col-sm-12 colOrder">
                 <div className="col-md-12">
-                    <table class="table table-striped table-hover table-responsive-xs">
+                    <table class="table table-striped table-hover table-responsive-xs tableOrder">
                         <thead>
                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email ID</th>
-                                <th scope="col">Service</th>
-                                <th scope="col">Pay With</th>
-                                <th scope="col">Status</th>
+                                <th scope="col fontOrderStyle">Name</th>
+                                <th scope="col fontOrderStyle">Email ID</th>
+                                <th scope="col fontOrderStyle">Service</th>
+                                <th scope="col fontOrderStyle">Pay With</th>
+                                <th scope="col fontOrderStyle">Status</th>
                             </tr>
                         </thead>
                         {

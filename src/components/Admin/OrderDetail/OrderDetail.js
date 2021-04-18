@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 const OrderDetail = ({ booking }) => {
 
     const { name } = booking.book;
-    const { displayName, email, paymentMethod, _id,status } = booking;
+    const { displayName, email, PaymentMethod, _id,status } = booking;
     const { register, handleSubmit, watch, errors } = useForm();
 
     const [book, setBook] = useState({})
@@ -31,11 +31,11 @@ const OrderDetail = ({ booking }) => {
     
             <tbody>
             <tr>
-                <td >{displayName}</td>
-                <td >{email}</td>
-                <td>{paymentMethod}</td>
-                <td>{name}</td>
-                <td>
+                <td className="fontOrderStyle">{displayName}</td>
+                <td className="fontOrderStyle">{email}</td>
+                <td className="fontOrderStyle">{PaymentMethod}</td>
+                <td className="fontOrderStyle">{name}</td>
+                <td className="fontOrderStyle">
                 <select name="status" onChange={handleChange}>
                             {
                               status=="Pending" &&<>

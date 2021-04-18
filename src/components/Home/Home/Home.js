@@ -8,8 +8,9 @@ import './Home.css'
 const Home = () => {
     return (
         <div className="container">
-        <div className="headerContainer">
+        
             <Navbar></Navbar>
+        <div className="headerContainer">
             <HeaderMain></HeaderMain>
             <Feature></Feature>
             <Services></Services>

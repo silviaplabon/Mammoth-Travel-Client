@@ -43,17 +43,19 @@ function App() {
             <ManageService></ManageService>
           </PrivateRoute >
           {/* user Route */}
-          <PrivateRoute  exact path="/addTestimonial">
+          <PrivateRoute  exact path="/user/addTestimonial">
             <AddTestimonial></AddTestimonial>
           </PrivateRoute >
-          <PrivateRoute  exact path="/service/:id">
+
+          <PrivateRoute  exact path="/user/service/:id">
                 <Book></Book>
           </PrivateRoute >
 
-          <PrivateRoute  exact path="/bookingList">
+          <PrivateRoute  exact path="/user/bookingList">
             <BookingList></BookingList>
           </PrivateRoute >
-          
+          {/* user Route */}
+
           <Route exact  path="/login">
             <Login></Login>
           </Route>

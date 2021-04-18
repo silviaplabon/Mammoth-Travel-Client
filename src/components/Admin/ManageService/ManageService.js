@@ -12,8 +12,9 @@ const ManageService = () => {
     }, [])
 
     return (
-        <div className="container row m-auto ">
-            <div className="col-md-4 navbarAddProduct pb-5 bg-warning">
+        <div className="container">
+            <div className="row">
+            <div className="col-md-4  pb-5 ">
                 <AdminSidebar></AdminSidebar>
             </div>
             <div className="col-md-8">
@@ -24,7 +25,7 @@ const ManageService = () => {
                 }
                 </div>
             </div>
-
+ </div>
         </div>
     );
 };

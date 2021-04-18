@@ -27,12 +27,12 @@ const TestimonialDetail = () => {
             .then(res => console.log('server side response', res))
     };
     return (
-        <div className="container row m-auto ">
-              <Navbar></Navbar>
-            <div className="col-md-4 navbarAddProduct pb-5 bg-warning mt-5">
+        <div className="container">
+    <div className="row mt-5">
+            <div className="col-md-4 col-sm-12 pb-5 mt-5">
                   <UserSidebar></UserSidebar>
             </div>
-            <div className="col-md-8 mt-5">
+            <div className="col-md-7 col-sm-12  mt-5 ms-1">
                 <form onSubmit={handleSubmit(onSubmit)} className="bg-light p-4 formStyle">
                     <div className="row d-flex">
                         <div className="col-md-7">
@@ -44,6 +44,7 @@ const TestimonialDetail = () => {
                         </div>
                     </div>
                 </form>
+            </div>
             </div>
         </div>
     );

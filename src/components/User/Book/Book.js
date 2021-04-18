@@ -41,8 +41,9 @@ const Book = () => {
             book: service,
             PaymentMethod:radio,
             paymentId,
+           
+            orderTime: new Date(),
             status:'Pending',
-            orderTime: new Date()
         };
 
         fetch('http://localhost:4200/addBook', {
@@ -62,14 +63,13 @@ const Book = () => {
     console.log(loggedInUser)
     console.log(radio)
     return (
-        <div className="container ">
-            <Navbar></Navbar>
-            <div className="row m-auto mt-5">
-                <div className="col-md-4 navbarAddProduct pb-5 bg-warning">
+        <div className="container">
+            <div className="row  mt-5">
+                <div className="col-md-4 col-sm-12 pb-5">
                     <UserSidebar></UserSidebar>
                 </div>
-                <div className="col-md-7 ms-5 bookSection mt-2">
-                    <div className="col-md-7">
+                <div className="col-md-7  col-sm-12 ms-2 bookSection mt-2">
+                    <div className="col-md-7 col-sm-12">
 
                         <div className="row d-flex ms-1 inputSection">
                             <input name="displayName" className="form-control " placeholder="User Name" defaultValue={displayName} ref={register} disabled />
@@ -87,7 +87,7 @@ const Book = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     );
 };
 
