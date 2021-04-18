@@ -26,8 +26,8 @@ const ServiceDetail = (props) => {
     return (
         <div  className="col mt-4 mt-2">
           <div className="card shadow-lg w-100 h-100 text-center rounded ">
-                <div className="d-flex justify-content-center align-items-center h-75 p-2">
-                    <img src={imageURL} className="card-img-top h-75 w-75" />
+                <div className="d-flex justify-content-center align-items-center h-75 ">
+                    <img src={imageURL} className="card-img-top h-100 w-100" />
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

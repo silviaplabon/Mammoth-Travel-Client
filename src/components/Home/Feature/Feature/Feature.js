@@ -46,7 +46,7 @@ const Feature = () => {
             <div className="row ">
                 <div className="col-md-12  featureImage  featureStyle mt-5">
                     {/* <img src={featureImage} className="img-fluid h-75 w-100"></img>  */}
-                  <h1 className="text-danger text-center my-4">Why we Different</h1>
+                  <h1 className=" text-center my-4" style={{color:'#2d524a'}}>Why we Different</h1>
                      <div className="featureShow col-md-6"> 
                     
                         <ul className=" list-group ulStyle">

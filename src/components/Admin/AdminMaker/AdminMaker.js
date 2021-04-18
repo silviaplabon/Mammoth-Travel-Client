@@ -18,7 +18,7 @@ const AdminMaker = () => {
         },
         body: JSON.stringify(adminData)
       })
-        .then(res => alert(res))
+        .then(res => alert('Admin Entered Successfully'))
     };
     let dataSidebar='Admin Maker';
   

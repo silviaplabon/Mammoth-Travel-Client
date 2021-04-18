@@ -46,10 +46,10 @@ const Navbar = () => {
             }
 
 
-            {loggedInUser.email && (loggedInUser.displayName ? <button className="btn buttonColor me-2  buttonStyleHeader">{loggedInUser.displayName}</button>
-              : <button className="btn  me-2  buttonStyle buttonColor">{loggedInUser.email}</button>)}
+            {loggedInUser.email && (loggedInUser.displayName ? <button className="btn buttonColor me-2  buttonStyleHeader text-white">{loggedInUser.displayName}</button>
+              : <button className="btn  me-2  buttonStyle buttonColor text-white">{loggedInUser.email}</button>)}
 
-            {loggedInUser.email ? <button onClick={() => handleLogout()} className="btn buttonColor logStyle  buttonStyleHeader ms-1">Logout</button> :
+            {loggedInUser.email ? <button onClick={() => handleLogout()} className="text-white btn buttonColor logStyle  buttonStyleHeader ms-1">Logout</button> :
               <Link to="/login" className="btn  ms-1 buttonStyleHeader buttonColor text-white">Login</Link>
             }
 

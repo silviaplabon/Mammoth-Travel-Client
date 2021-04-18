@@ -41,7 +41,7 @@ const AdminSidebar = () => {
                 
             </ul>
             <div>
-                <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
+                <Link to="/" className="text-white" onClick={() => setLoggedInUser({})} ><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>
         </div>
     );

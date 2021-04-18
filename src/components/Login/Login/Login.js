@@ -152,8 +152,8 @@ const Login = () => {
               {errors.password && <span className="error">{errors.password.message}</span>}
 
               {!authState && <input type="password" onBlur={handleChange} name="repassword" placeholder="Confirm Password" id="inputPassword" className="form-control mb-2 mt-2" required />}
-              {authState ? <input type="submit" value="Sign In" className="btn btn-lg w-100 btn-primary" /> :
-                <input type="submit" value="Sign Up" className="btn btn-lg w-100 btn-primary" />
+              {authState ? <input type="submit" value="Sign In" className="btn btn-lg w-100 text-white " style={{backgroundColor:'#2d524a'}}  /> :
+                <input type="submit" value="Sign Up" className="btn btn-lg w-100 text-white " style={{backgroundColor:'#2d524a'}} />
               }
             </form>
             {

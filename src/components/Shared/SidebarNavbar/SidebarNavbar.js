@@ -14,8 +14,8 @@ const SidebarNavbar = (props) => {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            {loggedInUser.email && (loggedInUser.displayName ? <button className="btn buttonColor me-2  buttonStyleHeader">{loggedInUser.displayName}</button>
-              : <button className="btn  me-2  buttonStyle buttonColor">{loggedInUser.email}</button>)}
+            {loggedInUser.email && (loggedInUser.displayName ? <button className=" text-white btn buttonColor me-2  buttonStyleHeader">{loggedInUser.displayName}</button>
+              : <button className="btn  me-2  buttonStyle buttonColor text-white">{loggedInUser.email}</button>)}
           </div>
         </div>
       </div>

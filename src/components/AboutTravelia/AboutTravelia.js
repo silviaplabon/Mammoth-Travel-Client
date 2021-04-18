@@ -23,17 +23,17 @@ const AboutTravelia = () => {
                     <div className="d-flex justify-content-between">
                         <div className="overflow-hidden w-25">
                             <h6>Travel Types</h6>
-                            <FontAwesomeIcon icon={faCarSide} style={{ fontSize: '4em',color:'red' }}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faCarSide} style={{ fontSize: '4em',color:'#2d524a' }}></FontAwesomeIcon>
                             <animated.span style={{ fontSize: '4em' }}>{props.number}</animated.span>
                         </div>
                         <div className="overflow-hidden w-25">
                             <h6>Hotel Types</h6>
-                            <FontAwesomeIcon icon={faCity} style={{ fontSize: '4em',color:'red' }}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faCity} style={{ fontSize: '4em',color:'2d524a' }}></FontAwesomeIcon>
                             <animated.span style={{ fontSize: '4em' }}>{props.number}</animated.span>
                         </div>
                         <div className="overflow-hidden w-25">
                             <h6>Service Center</h6>
-                            <FontAwesomeIcon icon={faWarehouse} style={{ fontSize: '4em',color:'red' }}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faWarehouse} style={{ fontSize: '4em',color:'2d524a' }}></FontAwesomeIcon>
                             <animated.span style={{ fontSize: '4em' }}>{props.number}</animated.span>
                         </div>  
                     </div>

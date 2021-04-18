@@ -10,7 +10,8 @@ const BookingList = () => {
     const [bookings, setBookings] = useState([]);
     const [loggedInUser,setLoggedInUser]=useContext(UserContext);
     console.log(loggedInUser,"silvia")
-    useEffect(() => {
+    const [spinner,setSpinner]=useState(true);
+;    useEffect(() => {
         fetch('https://pacific-mesa-84577.herokuapp.com/userbookings?email='+loggedInUser?.email,
             {
                 method: 'GET',
@@ -23,18 +24,28 @@ const BookingList = () => {
             .then(res => res.json())
             .then(data => {
                 setBookings(data)
+                setSpinner(false)
             })
     }, [loggedInUser.email])
      let dataSidebar="Booking List";
+
     return (
         <div className="container">
         <div className="row">
-            <div className="col-md-4 pb-5 mt-2">
+            <div className="col-md-4 pb-5 ">
                 <UserSidebar></UserSidebar>
             </div>
-            <div className="col-md-7 mt-5">
+            <div className="col-md-7 ">
+                {
+                        spinner &&
+                        <div className="text-center">
+                            <div class="spinner-grow  mt-5" role="status" style={{ width: '2rem',color:'#2d524a', height: '2rem' }}>
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                }
             <SidebarNavbar dataSidebar={dataSidebar} ></SidebarNavbar>
-                <div className="row">
+                <div className="row mt-5">
                 {
                     bookings.map(booking=><BookingDetail booking={booking}></BookingDetail>)
                 }

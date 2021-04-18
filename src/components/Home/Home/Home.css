@@ -30,7 +30,16 @@
     }
 
 }
-@media only screen and (min-device-width: 361px) and (max-device-width:511px) {
+@media only screen and (min-device-width: 431px) and (max-device-width:511px) {
+    .headerContainer::after {
+        height:22rem!important;
+        top: 15rem!important;
+    }
+    .imgHeader{
+        padding:1rem!important;
+    }
+}
+@media only screen and (min-device-width: 362px) and (max-device-width:431px) {
     .headerContainer::after {
         height:18rem!important;
         top: 18rem!important;
@@ -40,7 +49,7 @@
     }
 }
    
-@media only screen and (min-device-width: 200px) and (max-device-width:360px) {
+@media only screen and (min-device-width: 200px) and (max-device-width:362px) {
 
     .headerContainer::after {
         height:17rem!important;

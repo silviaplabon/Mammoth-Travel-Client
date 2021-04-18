@@ -27,11 +27,6 @@ const UserSidebar = () => {
                         <FontAwesomeIcon icon={faUserPlus} /> <span>Add Review</span>
                     </Link>
                 </li>
-                {/* <li>
-                    <Link to="/admin/manageVehicles" className="text-white">
-                        <FontAwesomeIcon icon={} /> <span>Manage Services</span>
-                    </Link>
-                </li> */}
                 <li>
                     <Link to="/" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
@@ -40,7 +35,7 @@ const UserSidebar = () => {
                 
             </ul>
             <div>
-                <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
+                <Link to="/" className="text-white" onClick={() => setLoggedInUser({})}><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>
         </div>
     );
